@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta name="msvalidate.01" content="5CCC6EE8FF816477D80A4DE459A738F1" />
+{% load static %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Telegram動画ダウンローダー：Telegram動画ダウンローダーを使って、任意の動画やGIFをダウンロードし、MP3やGIF形式に変換できます。今すぐTelegram動画ダウンローダーをお試しください！">
+<meta name="keywords" content="Telegram動画ダウンローダー">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@twittervideodownloaderx.com">
+<meta name="twitter:title" content="Telegram動画ダウンローダー——Telegramから動画とGIFを取得">
+<meta name="twitter:description" content="Telegram動画ダウンローダー：Telegram動画ダウンローダーを使って、任意の動画やGIFをダウンロードし、MP3やGIF形式に変換できます。今すぐTelegram動画ダウンローダーをお試しください！">
+<meta name="twitter:image" content="https://twittervideodownloaderx.com/static/logo.png  ">
+<meta name="twitter:image:alt" content="Telegram動画ダウンローダー——Telegramから動画とGIFを取得">
+
+<meta property="og:title" content="Telegram動画ダウンローダー——Telegramから動画とGIFを取得" />
+<meta property="og:description" content="Telegram動画ダウンローダー：Telegram動画ダウンローダーを使って、任意の動画やGIFをダウンロードし、MP3やGIF形式に変換できます。今すぐTelegram動画ダウンローダーをお試しください！" />
+<meta property="og:image" content="https://twittervideodownloaderx.com/static/logo.png  " />
+<meta property="og:image:alt" content="Telegram動画ダウンローダー——Telegramから動画とGIFを取得" />
+
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css    ">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css    " />
+<link href="https://gcore.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css  " rel="stylesheet">
+<script src="https://gcore.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js  "></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css  " rel="stylesheet">
+
+<link rel="stylesheet" href="/static/wait.css" >
+<link rel="stylesheet" href="/static/shareon.min.css" >
+<link rel="preconnect" href="https://fonts.googleapis.com  ">
+<link rel="preconnect" href="https://fonts.gstatic.com  " crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+
+{{websiteSchema|safe}}
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<link rel="icon" href="{% static 'favicon.ico' %}">
+<title>Telegram動画ダウンローダー——Telegramから動画とGIFを取得</title>
+</head>
+<body>
+
+		<style>
+		/* ================== グローバル変数とリセット ================== */
+		:root {
+		--tg-blue:      #0088CC;
+		--tg-blue-dark: #006BA3;
+		--tg-blue-light:#54A7E8;
+		--tg-gray:      #F5F5F5;
+		
+		
+		--bg-light: #fafafa;
+		--text-dark: #212121;
+		--text-light: #5f6368;
+		--card-bg: #ffffff;
+		--border-color: #e0e0e0;
+		--shadow: 0 2px 10px rgba(0,0,0,0.08);
+		--radius: 12px;
+		}
+		
+		
+		* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		}
+		
+		body {
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+		line-height: 1.65;
+		color: var(--text-dark);
+		background-color: var(--bg-light);
+		padding: 5px;
+		}
+		
+		.container {
+		max-width: 960px;
+		margin: 0 auto;
+		}
+		
+		/* ================== 共通スタイル ================== */
+		a {
+		color: var(--tg-blue);
+		text-decoration: none;
+		}
+		a:hover {
+		text-decoration: underline;
+		}
+
+		code {
+		background-color: #f1f1f1;
+		padding: 2px 6px;
+		border-radius: 4px;
+		font-family: monospace;
+		font-size: 0.94em;
+		color: var(--tg-blue);
+		}
+		
+		h1, h2, h3, h4 {
+		font-weight: 800;
+		line-height: 1.3;
+		margin-bottom: 1rem;
+		}
+		
+		h1 {
+		font-size: 2.3rem;
+		color: var(--tg-blue);
+		text-align: center;
+		}
+		
+		.subtitle {
+		font-size: 1.2rem;
+		color: var(--text-light);
+		text-align: center;
+		max-width: 700px;
+		margin: 0 auto 1.5rem;
+		line-height: 1.6;
+		}
+
+		.notice-box {
+		background: #f0f9ff;
+		border-left: 4px solid var(--tg-blue);
+		padding: 1.2rem;
+		margin: 1.5rem auto 2rem;
+		border-radius: 8px;
+		font-size: 0.98rem;
+		max-width: 800px;
+		}
+		
+		h2 {
+		font-size: 1.75rem;
+		margin-top: 2.5rem;
+		padding-bottom: 0.6rem;
+		border-bottom: 2px solid var(--border-color);
+		}
+		
+		h3 {
+		font-size: 1.35rem;
+		color: #333;
+		}
+		
+		h4 {
+		font-size: 1.15rem;
+		color: var(--tg-blue);
+		margin: 1.4rem 0 0.8rem;
+		}
+		
+		p {
+		margin-bottom: 1rem;
+		}
+
+		ul, ol {
+		padding-left: 1.5rem;
+		margin: 1rem 0;
+		}
+		
+		li {
+		margin-bottom: 0.6rem;
+		}
+		
+		/* ================== レイアウトコンポーネント ================== */
+		.feature-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.5rem;
+		margin: 1.5rem 0;
+		}
+		
+		.feature-card {
+		background: var(--card-bg);
+		padding: 1.4rem;
+		border-radius: var(--radius);
+		box-shadow: var(--shadow);
+		border: 1px solid #eee;
+		}
+
+		.step-container {
+		display: flex;
+		flex-direction: column;
+		gap: 1.4rem;
+		margin: 1.5rem 0;
+		}
+		
+		.step-card {
+		background: var(--card-bg);
+		padding: 1.6rem;
+		border-radius: var(--radius);
+		box-shadow: var(--shadow);
+		border: 1px solid #eee;
+		}
+		
+		.faq-list {
+		display: flex;
+		flex-direction: column;
+		gap: 1.2rem;
+		}
+		
+		.faq-item {
+		background: var(--card-bg);
+		padding: 1.3rem;
+		border-radius: var(--radius);
+		box-shadow: var(--shadow);
+		border: 1px solid #eee;
+		}
+
+		footer {
+		text-align: center;
+		padding: 2rem 0 1rem;
+		color: var(--text-light);
+		font-size: 0.95rem;
+		border-top: 1px solid var(--border-color);
+		margin-top: 2rem;
+		}
+		
+        .footer {
+            background: #212529;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: #00c6ff;
+            text-decoration: none;
+        }
+		
+		
+		/* ================== レスポンシブブレークポイント ================== */
+		@media (min-width: 768px) {
+		body {
+		padding: 5px;
+		}
+		h1 {
+		font-size: 2.7rem;
+		}
+		.subtitle {
+		font-size: 1.35rem;
+		}
+		h2 {
+		font-size: 2rem;
+		}
+		}
+
+		@media (min-width: 1024px) {
+		body {
+		padding: 5px;
+		}
+		.feature-grid {
+		grid-template-columns: repeat(2, 1fr);
+		}
+		}
+		
+		@media (max-width: 480px) {
+		h1 {
+		font-size: 1.9rem;
+		}
+		.subtitle {
+		font-size: 1.1rem;
+		padding: 0 8px;
+		}
+		.notice-box {
+		padding: 1rem;
+		font-size: 0.9rem;
+		}
+		.step-card, .feature-card, .faq-item {
+		padding: 1.2rem;
+		}
+		}
+		
+
+		
+		</style>
+
+
+<div class="container-fluid  text-break">
+<div class="row" style="background:linear-gradient(135deg, var(--tg-blue) 0%, var(--tg-blue-light) 50%, var(--tg-gray) 100%);">
+<div class="row" >
+    <div class="col-sm-2 d-none d-sm-block" >
+    </div>
+	<div class="col-sm-4 align-self-end"  >
+		<a href='https://twittervideodownloaderx.com' style="text-decoration:none"><img  data-src='/static/logo.png' src='/static/pix.jpg' class="img-fluid lazy align-text-bottom" alt='サイトロゴ'><span  class='align-text-bottom text-wrap fs-3' style="font-style:italic;color:white;font-family:'Tektur',sans-serif;">Twittervideodownloaderx</span></a>
+    </div>
+	
+	<div class="col-sm-4 d-flex justify-content-end align-items-center" id="webdes">
+			<ul  style='padding-top:25px;color:white'  class="nav nav-tabs" >
+				<li style='display:inline;'><a href='https://twittervideodownloaderx.com' style='text-decoration: none;color:white'>ホーム</a>&nbsp;&nbsp;</li>
+	
+				<div class="text-end mb-3">
+					<div class="dropdown d-inline-block">
+						<button class="btn btn-sm btn-outline-light d-flex align-items-center gap-1"
+								type="button"
+								id="langDropdown"
+								data-bs-toggle="dropdown"
+								aria-expanded="false">
+						<i class="fa-solid fa-video"></i>
+						<span>動画ダウンロードツール</span>
+						</button>
+				
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+							{{toollistele|safe}}
+						</ul>
+					</div>&nbsp;&nbsp;
+				</div>
+				
+				<div class="text-end mb-3">
+					<div class="dropdown d-inline-block">
+						<button class="btn btn-sm btn-outline-light d-flex align-items-center gap-1"
+								type="button"
+								id="langDropdown"
+								data-bs-toggle="dropdown"
+								aria-expanded="false">
+						<i class="bi bi-globe"></i>
+						<span>🇯🇵 日本語</span>
+						</button>
+				
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+							{{langlistele|safe}}
+						</ul>
+					</div>
+				</div>
+			</ul>
+		</div>
+	<div class="col-sm-2" id='langweb' >
+	</div>
+</div>
+<div class="row" >
+    <div class="col-md-2 d-none d-md-block">
+    </div> 
+    <div class="col-md-8"  style="border-width:1px;border-style: solid;background-color:#F5F7FA">
+	
+	
+		<br />
+		<div id='titleweb'  style='text-align:center;color:#2D3E50' >
+			<h1 style='font-family: "Tektur",sans-serif;'>✈️ Telegram 動画ダウンローダー</h1>
+			<p class="subtitle">Telegram公開チャンネル/グループから無料で動画をダウンロード · オリジナルHD MP4 · ログイン不要 · プライバシー保護</p>
+		</div> 
+		<div id='ad' >
+		</div>
+		<div style='text-align:center'>
+		
+		<input type='text' id='mainsource' style='width:80%;display:inline;color:#2D3E50' placeholder="Telegramリンクを入力" >
+		</div>
+		<div style='text-align:center;color:#2D3E50'>
+		例 : https://t.me/durov/375?single
+		</div>
+		<br/>
+		<div style='text-align:center'>
+		<button type="button" class="btn" id='bigbutton' style='background-color:#FF6B35;color:white'><i class="bi bi-download"></i> 動画をダウンロード</button>
+		</div>
+		<br/>
+		
+		<div class="spinner-grow text-primary text-center" role="status" style='display:none;font-size:3em' id='loader'>
+			<span class="visually-hidden">ダウンロード中...</span>
+		</div>
+		
+		<div class=""  id='hashshow' style='color:#2D3E50'>
+		</div> 
+		<br />
+		
+		
+	</div>
+	<div class="col-md-2 d-none d-md-block">
+	</div>
+</div>
+<div class="row" >
+	<p>&nbsp;<span>{% csrf_token %}</span></p>
+</div>
+</div>
+
+<div class="row" style='margin-top:3em;background-color:#F5FAFB'>
+	<div class="col-sm-2 d-none d-md-block">
+	</div> 
+	<div class="col-sm-8"  >
+
+	<div class="container">
+	
+		<div class="notice-box">
+		🔒 <strong>重要なお知らせ：</strong>このツールは<strong>公開チャンネル/グループのコンテンツのみをサポート</strong>します。<strong>プライベートチャット、非公開グループ、保護されたコンテンツにはアクセスできません</strong>。動画を保存せず、Telegram APIの権限を要求せず、すべての処理はローカルで行われます。Telegram利用規約を遵守し、コンテンツ作成者の権利を尊重してください。
+		</div>
+
+
+		<section>
+		<h2>✨ 主な機能と制限事項</h2>
+		<div class="feature-grid">
+		<div class="feature-card">
+		<h4>🎥 公開チャンネル動画ダウンロード</h4>
+		<p>Telegram公開チャンネル/グループのウェブ版（t.me/チャンネル名/メッセージID）から動画をダウンロードし、オリジナル画質（最大1080P）を維持します。</p>
+		</div>
+		<div class="feature-card">
+		<h4>⚡ アカウント不要</h4>
+		<p>Telegram電話番号、APIキー、ログイン認証情報は不要で、完全に匿名で使用でき、アカウントの安全性を保護します。</p>
+		</div>
+		<div class="feature-card">
+		<h4>🛡️ プライバシー優先</h4>
+		<p>すべての解析はクライアント側で行われ、動画直リンクは当社サーバーを経由せず、IPやダウンロード履歴を記録しません。</p>
+		</div>
+		<div class="feature-card">
+		<h4>📱 全プラットフォーム対応</h4>
+		<p>iOS、Android、Windows、macOSに対応し、主要ブラウザ（Chrome、Safari、Firefox）で使用できます。</p>
+		</div>
+		</div>
+		<p><strong>✅ 対応：</strong>公開チャンネル/グループのウェブ版動画（t.meリンク）、保護されていないコンテンツ<br>
+		<strong>❌ 非対応：</strong>プライベートチャットコンテンツ、非公開グループ、保護されたコンテンツ（「転送禁止」）、Telegramプレミアム限定コンテンツ、GIFから動画への変換</p>
+		<p><strong>⚠️ 重要な制限：</strong>Telegramは標準的な公開動画リンクを提供していないため、このツールは<strong>Telegramアプリから直接ダウンロードできません</strong>。公開チャンネル/グループの<strong>ウェブ版リンク</strong>（<code>https://t.me/ChannelName/123</code>のような形式）を使用する必要があります。</p>
+		</section>
+
+		<section>
+		<h2>📥 詳細な使い方（3つの簡単なステップ）</h2>
+		<div class="step-container">
+		<div class="step-card">
+		<h4>ステップ 1：Telegram公開チャンネル動画リンクを取得</h4>
+		<p><strong>方法 A：Telegramアプリから（推奨）</strong></p>
+		<ol>
+		<li>Telegramアプリを開き、ダウンロードしたい動画がある<strong>公開チャンネルまたはグループ</strong>に入る</li>
+		<li>対象の動画メッセージを<strong>長押し</strong> → 右下の <strong>⋮（詳細）</strong>をタップ → <strong>「リンクをコピー」</strong>を選択</li>
+		<li>リンク形式は以下のいずれか：<br>
+		<code>https://t.me/ChannelName/123</code><br>
+		または<br>
+		<code>https://t.me/c/123456789/123</code>
+		</li>
+		</ol>
+		<p><strong>方法 B：Telegramウェブ版から</strong></p>
+		<ol>
+		<li>ブラウザで<a href="https://web.telegram.org" target="_blank">web.telegram.org</a>を開く</li>
+		<li>Telegramアカウントにログインし、公開チャンネルを見つける</li>
+		<li>動画メッセージのタイムスタンプを<strong>右クリック</strong> → <strong>「リンクアドレスをコピー」</strong>を選択</li>
+		</ol>
+		<p><strong>💡 重要なヒント：</strong>チャンネル/グループが<strong>公開</strong>状態（参加せずに閲覧可能）であることを確認してください。非公開コンテンツはダウンロードできません。</p>
+		</div>
+
+		<div class="step-card">
+		<h4>ステップ 2：リンクを貼り付けて解析</h4>
+		<ol>
+		<li>このダウンローダーページに戻る</li>
+		<li>コピーしたt.meリンクを上部の入力欄に貼り付ける</li>
+		<li><strong>【動画を解析】</strong>ボタンをクリック</li>
+		</ol>
+		<p>システムが自動的に：<br>
+		• リンクが公開コンテンツを指しているか確認<br>
+		• 動画メタデータ（タイトル、時間、サムネイル）を抽出<br>
+		• 直接ダウンロードリンク（MP4形式）を生成<br>
+		⏳ 解析プロセスには通常3〜8秒かかり、動画サイズによって異なります</p>
+		</div>
+		
+		<div class="step-card">
+		<h4>ステップ 3：HD動画をダウンロード</h4>
+		<ul>
+		<li>解析が成功したら、<strong>【MP4をダウンロード】</strong>ボタンをクリック</li>
+		<li>ブラウザがオリジナルHD動画ファイルのダウンロードを開始</li>
+		<li>ファイルはデフォルトでデバイスの<strong>「ダウンロード」フォルダ</strong>に保存</li>
+		</ul>
+		<p><strong>📌 使用上の提案：</strong></p>
+		<ul>
+		<li>大きなファイルのダウンロードが中断？ → ダウンロードマネージャー（IDM、Free Download Managerなど）を使用</li>
+		<li>音声を抽出したい？ → MP4をダウンロード後、オンラインツールでMP3に変換</li>
+		<li>重要な資料を保存？ → メタデータ（タイトル、元リンク）もバックアップすることをお勧め</li>
+		</ul>
+		<p><strong>⚠️ 注意：</strong>Telegram動画直リンクの有効期限は通常1〜2時間です。ダウンロードはお早めに完了してください。</p>
+		</div>
+		</div>
+		</section>
+
+		<section>
+		<h2>⚙️ 技術的な仕組みの説明</h2>
+		<ul>
+		<li>このツールはTelegramウェブ版の公開メッセージのDOM構造を分析し、動画直リンク（<code>&lt;video&gt;</code>タグの<code>src</code>属性）を抽出します。</li>
+		<li>新しいバージョンのTelegramでは、公式<code>t.me</code>ページのJSON設定を使用してメディアURLを抽出し、<strong>いかなるサードパーティAPIにも依存しません</strong>。</li>
+		<li>動画はオリジナルMP4形式で提供され、アップロード時の完全な解像度とビットレートを保持し、<strong>圧縮なし、ウォーターマークなし</strong>。</li>
+		<li><strong>すべての処理はブラウザ側で完了</strong>：JavaScriptが直接動画URLを取得しダウンロードをトリガーし、いかなるサーバーも経由しません。</li>
+		<li>保護されたコンテンツ（「転送禁止」設定の動画）の場合、Telegramはメディアストリームを暗号化するため、このようなコンテンツは本ツールではダウンロードできません。</li>
+		</ul>
+		<p><strong>技術的制限の説明：</strong>Telegramは公式ダウンロードAPIを提供しておらず、ウェブ構造も頻繁に更新されるため、このツールはTelegramウェブ版の改定後、一時的に機能しない場合があります。互換性を維持するために迅速に更新することを約束します。</p>
+		</section>
+		
+		<section>
+		<h2>⚠️ プライバシーポリシーと法的声明</h2>
+		<ol>
+		<li><strong>プライバシー保護：</strong>このツールはユーザーデータを収集・保存しません。すべてのリンク解析はブラウザのローカルで完了し、サーバーに送信されません。</li>
+		<li><strong>公開コンテンツのみ：</strong>プライベート会話、有料チャンネル、または無許可コンテンツのダウンロードを試みることは固く禁じられています。Telegram保護メカニズムを回避する方法は提供しません。</li>
+		<li><strong>著作権遵守：</strong>ダウンロードしたコンテンツは個人使用のみに限定されています。再アップロード、商用配布、または作成者の権利を侵害する行為は禁止されています。<a href="https://core.telegram.org/api/terms" target="_blank">Telegram利用規約</a>を尊重してください。</li>
+		<li><strong>免責条項：</strong>ユーザーはダウンロード行為の合法性を自己判断する必要があります。このツールの悪用によるアカウント停止、法的紛争について責任を負いません。</li>
+		<li><strong>保証なし：</strong>このツールは「現状のまま」提供され、すべてのTelegram動画との100%互換性を保証せず、データ損失の責任を負いません。</li>
+		</ol>
+		</section>
+
+		<section>
+		<h2>❓ よくある質問（FAQ）</h2>
+		<div class="faq-list">
+		<div class="faq-item">
+		<strong>Q：「リンクを解析できません」と表示されるのはなぜ？</strong><br>
+		考えられる原因：<br>
+		• リンクが公開チャンネル/グループコンテンツではない（例：プライベートチャットリンク）<br>
+		• チャンネルがプライバシー保護を設定している<br>
+		• Telegramウェブ版の構造が更新された（迅速に修正します）<br>
+		• リンク形式が間違っている（<code>t.me/</code>で始まる必要がある）
+		</div>
+		<div class="faq-item">
+		<strong>Q：暗号化グループやプライベートチャットの動画をダウンロードできますか？</strong><br>
+		<strong>できません。</strong>このツールはTelegramセキュリティポリシーを厳格に遵守し、完全に公開され、ログイン不要でアクセス可能なコンテンツのみをサポートします。非公開コンテンツにはTelegram公式クライアントが必要です。
+		</div>
+		<div class="faq-item">
+		<strong>Q：ダウンロードした動画にウォーターマークや画質劣化はありますか？</strong><br>
+		ありません。Telegramサーバー上のオリジナル動画ファイルを提供し、Telegramアプリで視聴する画質と完全に一致し、追加のウォーターマークは含まれません。
+		</div>
+		<div class="faq-item">
+		<strong>Q：iOSデバイスでダウンロード後にファイルが見つからないのはなぜ？</strong><br>
+		iOSの制限：Safariでダウンロードしたファイルは「ファイル」アプリ → 「iCloudドライブ」 → 「ダウンロード」に保存されます。「ファイル」アプリをインストールしてダウンロード内容を管理することをお勧めします。
+		</div>
+		<div class="faq-item">
+		<strong>Q：Telegramチャンネルのドキュメントや音声ファイルのダウンロードはサポートしていますか？</strong><br>
+		現在のバージョンは動画ダウンロードのみをサポートしています。多形式サポート（PDF、MP3、ZIPなど）を開発中ですので、今後の更新をお待ちください！
+		</div>
+		<div class="faq-item">
+		<strong>Q：このツールは安全ですか？Telegramアカウントが盗まれますか？</strong><br>
+		完全に安全です。このツールは<strong>いかなるTelegramアカウント情報（電話番号、セッション、連絡先）も要求・収集しません</strong>。公開ウェブページのメディアリンクのみを処理し、あなたのTelegramアカウントとは完全に隔離されています。
+		</div>
+		</div>
+		</section>
+
+		<footer>
+		<p>問題や改善提案がありますか？ご意見を重視しています！<br>
+		📧 メール：<a href="{{mailtocontactmail}}">{{contactmail}}</a><br>
+		💬 GitHub Issues：<a href="{{githublink}}" target="_blank">{{githublink}}</a></p>
+		<p style="margin-top: 1.2rem; font-style: italic; color: #666;">
+		<strong>Telegram動画ダウンローダー</strong>をご利用いただきありがとうございます——<br>
+		プライバシーに注力し、ルールを尊重し、公開コンテンツを自由に流す。🕊️
+		</p>
+		<p style="margin-top: 0.8rem; font-size: 0.85rem; color: #999;">
+		このツールはTelegram FZ-LLCと一切関係ありません。TelegramはTelegram FZ-LLCの登録商標です。
+		</p>
+		</footer>
+
+	<footer class="footer">
+			<p>© {{year_string}} Telegram動画ダウンローダー. All rights reserved.</p>
+			<p>当サイトはTelegram, Inc.と公式に関連していません | 
+			<a href="/privacy-policy" style="color: #00c6ff;">プライバシーポリシー</a> | 
+			<a href="/terms-of-service" style="color: #00c6ff;">利用規約</a> | 
+			<a href="/about-us" style="color: #00c6ff;">私たちについて</a>| 
+			<a href="/contact-us" style="color: #00c6ff;">お問い合わせ</a>
+			</p>
+			<p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">
+				このツールは個人の学習・研究目的でのみ使用され、ユーザーはすべての法的責任を自己負担します
+			</p>
+			<p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">
+				著作権で保護されたコンテンツのダウンロードは関連する法令に違反する可能性がありますので、現地の法律を遵守してください
+			</p>
+	</footer>
+
+
+	</div>
+
+	</div>
+	<div class="col-sm-2 d-none d-md-block">
+	</div>
+</div>
+</div>
+<script src="/static/jquery.min.js"  crossorigin="anonymous"></script>
+<script src="/static/popper.min.js"  crossorigin="anonymous"></script>
+
+<script data-ad-client="ca-pub-3339068484857413" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script type="text/javascript" src="/static/jquery.lazy.min.js"></script>
+
+<script type="text/javascript" src="/static/shareon.iife.js" defer  init></script>
+<script>
+	$(function() {
+		$('.lazy').Lazy();
+	});
+</script>
+<script type="application/ld+json">
+	{
+	"@context": "http://schema.org/",
+	"@type": "Organization",
+	"url": "https://twittervideodownloaderx.com",
+	"logo": "https://twittervideodownloaderx.com/static/logo.png"
+	}
+</script>
+
+<script>
+function mp3turn(obj){
+	var inputvalue =obj.getAttribute('va');
+	//alert(inputvalue);
+	if (inputvalue==='')
+	{
+		alert('456');
+		return false;
+	}
+	$('#mp3placeholder').empty();
+	var spinner='<span style="font-size:1.5em"><span class="spinner-loader" ></span>';
+	$('#mp3placeholder').append(spinner+'<br />動画をMp3に変換中</span>');
+	var xhr = new XMLHttpRequest();
+	var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+	xhr.open('post', '/getmp3', true);
+	xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	xhr.send('inputvalue='+inputvalue);
+	xhr.onreadystatechange = processresponse;
+	function processresponse() {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			// Everything is good, the response was received.
+		if (xhr.status === 200) {
+			// Perfect!
+			var rstring=xhr.responseText;
+			//alert(xhr.responseText);
+			var response = JSON.parse(rstring);
+			var statue=response.statue;
+			if (statue=='NO'){
+				$('#mp3placeholder').html('結果なし');
+				return;
+				}
+			var mp3filepath=response.mp3filepath;
+			//alert(htimage);
+			$('#mp3placeholder').empty();
+			var intext='';
+			var intext='<a href="/'+mp3filepath+'" target="_blank" class="btn btn-danger">動画Mp3をダウンロード</a>';
+			$('#mp3placeholder').html(intext);
+			}
+		else{
+			$('#mp3placeholder').html('<p style="font-size:1.5em">結果なし</p>');
+		}
+		}
+	}
+};
+function gifturn(obj){
+	var inputvalue =obj.getAttribute('va');
+	//alert(inputvalue);
+	if (inputvalue==='')
+	{
+		alert('456');
+		return false;
+	}
+	$('#gifplaceholder').empty();
+	var spinner='<span style="font-size:1.5em"><span class="spinner-loader" ></span>';
+	$('#gifplaceholder').append(spinner+'<br />動画をGifに変換中</span>');
+	var xhr = new XMLHttpRequest();
+	var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+	xhr.open('post', '/getgif', true);
+	xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	xhr.send('inputvalue='+inputvalue);
+	xhr.onreadystatechange = processresponse;
+	function processresponse() {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			// Everything is good, the response was received.
+		if (xhr.status === 200) {
+			// Perfect!
+			var rstring=xhr.responseText;
+			//alert(xhr.responseText);
+			var response = JSON.parse(rstring);
+			var statue=response.statue;
+			if (statue=='NO'){
+				$('#gifplaceholder').html('結果なし');
+				return;
+				}
+			var giffilepath=response.giffilepath;
+			//alert(htimage);
+			$('#gifplaceholder').empty();
+			var intext='';
+			var intext='<a href="/'+giffilepath+'" target="_blank" class="btn btn-danger">動画GIFをダウンロード</a>';
+			$('#gifplaceholder').html(intext);
+			}
+		else{
+			$('#gifplaceholder').html('<p style="font-size:1.5em">結果なし</p>');
+		}
+		}
+	}
+};
+$(document).ready(function() {
+$("#mainsource").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $("#bigbutton").click();
+    }
+});
+$('#bigbutton').on('click',function(){
+	var inputvalue = $('#mainsource').val();
+	if (inputvalue==='')
+	{
+		return false;
+	}
+	$('#hashshow').empty();
+	var spinner='<div style="text-align:center;"><span style="font-size:1.5em;"><span style="background-color:#007FFF;" class="spinner-loader" ></span>';
+	$('#hashshow').append(spinner+'<br />動画をダウンロード中</span></div>');
+	
+	//document.getElementById("loader").style.display = "block";
+
+	var xhr = new XMLHttpRequest();
+	var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+	xhr.open('post', '/getitem_telegram', true);
+	xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	xhr.send('inputvalue='+inputvalue);
+	xhr.onreadystatechange = processresponse;
+	function processresponse() {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			// Everything is good, the response was received.
+		if (xhr.status === 200) {
+			// Perfect!
+			document.getElementById("loader").style.display = "none";
+			var rstring=xhr.responseText;
+			//alert(xhr.responseText);
+			var response = JSON.parse(rstring);
+			var statue=response.statue;
+			if (statue=='NO'){
+				$('#hashshow').html('結果なし');
+				return;
+				}
+				
+				
+				
+				var v_thumbnail=encodeURI(response.v_thumbnail);//
+				
+				var v_title=response.v_title;//
+				var v_webpage_url=encodeURI(response.v_webpage_url);//
+				var v_duration_string=response.v_duration_string;//
+				//var v_uploader=response.v_uploader;
+				//var v_uploader_url=response.v_uploader_url;
+				var v_upload_date=response.v_upload_date;//
+				//var v_view_count=response.v_view_count;
+				//var v_like_count=response.v_like_count;
+				//var v_comment_count=response.v_comment_count;
+				var v_ext=response.v_ext;//
+				//var v_width=response.v_width;
+				//var v_height=response.v_height;
+				var v_resolution=response.v_resolution;//
+				var v_aspect_ratio=response.v_aspect_ratio;//
+				
+				var v_des=response.v_des;//
+
+				var v_formats = response.formatslist;
+				//var v_thumbnails = response.thumbnailslist;
+			
+
+			$('#hashshow').empty();
+			var intext='';
+			var intext=intext+'<div class="row" ><div class="col-sm-6" ><div><b>'+v_title+'</b></div><div><img src="'+v_thumbnail+'"  class="img-fluid" /></div>';
+			
+
+			var intext=intext+'</div><div class="col-sm-6 align-self-end" ><br /><br />';
+			
+			for (let i = 0; i < v_formats.length; i++) {
+			
+				turl=encodeURI(v_formats[i][0]);
+				tres=v_formats[i][1];
+				var intext=intext+'<div><i class="bi bi-cloud-download"></i> <a style="text-decoration:none" href="'+turl+'">動画をダウンロード（解像度 '+tres+'）</a></div>';
+			}
+			
+			//var intext=intext+'<br />'
+			//for (let i = 0; i < v_thumbnails.length; i++) {
+			
+			//	turl=v_thumbnails[i][0];
+			//	tres=v_thumbnails[i][1];
+			//	var intext=intext+'<div><i class="bi bi-file-image"></i> <a style="text-decoration:none" href="'+turl+'">サムネイルをダウンロード（解像度 '+tres+'）</a></div>';
+			//}
+			
+			var intext=intext+'</div></div><hr />';
+	
+			var intext=intext+'<div class="row" ><div class="col-sm-6" ><div><b>タイトル: </b>'+v_title+'</div><div><b>ウェブページリンク: </b>'+v_webpage_url+'</div><div><b>時間: </b>'+v_duration_string+'</div><div><b>アップロード日: </b>'+v_upload_date+'</div></div>';
+	
+			var intext=intext+'<div class="col-sm-6" ><div><b>ファイル形式: </b>'+v_ext+'</div><div><b>解像度: </b>'+v_resolution+'</div><div><b>縦横比: </b>'+v_aspect_ratio+'</div></div></div>';
+
+			var intext=intext+'<div class="row" ><div class="col-sm-12" ><div><b>動画説明: </b>'+v_des+'</div></div></div>';
+
+
+			var intext=intext+'<div class="row" >'+'<div class="shareon shadow bg-light bg-gradient"><a class="facebook" data-title="'+v_title+'" ><span  style="font-size:1em">facebook</span></a><a class="linkedin" data-title="'+v_title+'" ><span style="font-size:1em">linkedin</span></a>	<a class="mastodon" data-title="'+v_title+'"><span  style="font-size:1em">mastodon</span></a><a class="messenger" data-fb-app-id="0123456789012345" data-title="'+v_title+'"><span  style="font-size:1em">messenger</span></a><a class="pinterest" data-title="'+v_title+'"><span  style="font-size:1em">pinterest</span></a><a class="reddit" data-title="'+v_title+'"><span  style="font-size:0.5em">reddit</span></a><a class="telegram" data-title="'+v_title+'"><span  style="font-size:1em">telegram</span></a><a class="twitter" data-title="'+v_title+'"><span  style="font-size:1em">twitter</span></a><a class="viber" data-title="'+v_title+'"><span  style="font-size:1em">viber</span></a><a class="vkontakte" data-title="'+v_title+'"><span  style="font-size:1em">vkontakte</span></a><a class="whatsapp" data-title="'+v_title+'"><span  style="font-size:1em">whatsapp</span></a></div>';
+			
+			
+			var intext=intext+'</div>';
+			
+			//$('#hashshow').append('<div>'+'<img src="'+htsimage+'" />'+'</div>'+'<p>'+trunttext+'</p>');
+			$('#hashshow').html(intext);
+			}
+		else{
+			document.getElementById("loader").style.display = "none";
+			$('#hashshow').html('<p style="font-size:1.5em">結果なし</p>');
+		}
+		}
+	}
+});
+});
+</script>
+<script>
+$(document).ready(function() {
+  $('.droplang').click(function(e) {
+    e.preventDefault();
+    var selectedValue = $(this).data('value');
+	var domainname='https://twittervideodownloaderx.com';
+	if (selectedValue==='en')
+	{
+		window.location=domainname+'/{{baseurlstring}}';
+	}
+	else
+	{
+	window.location=domainname+'/{{baseurlstring}}_'+selectedValue;
+	}
+  });
+});
+</script>
+
+
+<script>
+$(document).ready(function() {
+  $('.droptool').click(function(e) {
+    e.preventDefault();
+    var selectedtoolValue = $(this).data('value');
+	var domainname='https://twittervideodownloaderx.com';
+	var current_lang='{{lang}}';
+	
+	if (selectedtoolValue==='x_twitter')
+	{
+		if (current_lang==='en')
+			{
+			window.location=domainname;
+			}
+		else
+			{
+			window.location=domainname+'/'+current_lang;
+			}
+	}
+	else
+	{
+		if (current_lang==='en')
+		
+			{
+			window.location=domainname+'/'+selectedtoolValue+'_downloader';
+			}
+		else
+			{
+			window.location=domainname+'/'+selectedtoolValue+'_downloader_'+'{{lang}}';
+			}
+	}
+  });
+});
+</script>
+<script type="text/javascript">
+var sc_project=11698515; 
+var sc_invisible=1; 
+var sc_security="38970939"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+
+<link  rel="stylesheet" href='/static/wait.css' >
+</body>
+</html>

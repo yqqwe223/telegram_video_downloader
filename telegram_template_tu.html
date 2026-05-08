@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta name="msvalidate.01" content="5CCC6EE8FF816477D80A4DE459A738F1" />
+{% load static %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Telegram Video İndirici: Telegram Video İndiricimizi kullanarak herhangi bir video veya GIF'i indirebilir ve MP3 veya GIF formatına dönüştürebilirsiniz. Daha ne bekliyorsunuz? Hemen Telegram Video İndiricimizi deneyin!">
+<meta name="keywords" content="Telegram Video İndirici">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@twittervideodownloaderx.com">
+<meta name="twitter:title" content="Telegram Video İndirici – Telegram'dan Video ve GIF İndirin">
+<meta name="twitter:description" content="Telegram Video İndirici: Telegram Video İndiricimizi kullanarak herhangi bir video veya GIF'i indirebilir ve MP3 veya GIF formatına dönüştürebilirsiniz. Daha ne bekliyorsunuz? Hemen Telegram Video İndiricimizi deneyin!">
+<meta name="twitter:image" content="https://twittervideodownloaderx.com/static/logo.png  ">
+<meta name="twitter:image:alt" content="Telegram Video İndirici – Telegram'dan Video ve GIF İndirin">
+
+<meta property="og:title" content="Telegram Video İndirici – Telegram'dan Video ve GIF İndirin" />
+<meta property="og:description" content="Telegram Video İndirici: Telegram Video İndiricimizi kullanarak herhangi bir video veya GIF'i indirebilir ve MP3 veya GIF formatına dönüştürebilirsiniz. Daha ne bekliyorsunuz? Hemen Telegram Video İndiricimizi deneyin!" />
+<meta property="og:image" content="https://twittervideodownloaderx.com/static/logo.png  " />
+<meta property="og:image:alt" content="Telegram Video İndirici – Telegram'dan Video ve GIF İndirin" />
+
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css    ">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css    " />
+<link href="https://gcore.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css  " rel="stylesheet">
+<script src="https://gcore.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js  "></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css  " rel="stylesheet">
+
+<link rel="stylesheet" href="/static/wait.css" >
+<link rel="stylesheet" href="/static/shareon.min.css" >
+<link rel="preconnect" href="https://fonts.googleapis.com  ">
+<link rel="preconnect" href="https://fonts.gstatic.com  " crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+
+{{websiteSchema|safe}}
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<link rel="icon" href="{% static 'favicon.ico' %}">
+<title>Telegram Video İndirici – Telegram'dan Video ve GIF İndirin</title>
+</head>
+<body>
+
+		<style>
+		/* ================== Genel Değişkenler ve Sıfırlama ================== */
+		:root {
+		--tg-blue:      #0088CC;
+		--tg-blue-dark: #006BA3;
+		--tg-blue-light:#54A7E8;
+		--tg-gray:      #F5F5F5;
+		
+		
+		--bg-light: #fafafa;
+		--text-dark: #212121;
+		--text-light: #5f6368;
+		--card-bg: #ffffff;
+		--border-color: #e0e0e0;
+		--shadow: 0 2px 10px rgba(0,0,0,0.08);
+		--radius: 12px;
+		}
+		
+		
+		* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		}
+		
+		body {
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+		line-height: 1.65;
+		color: var(--text-dark);
+		background-color: var(--bg-light);
+		padding: 5px;
+		}
+		
+		.container {
+		max-width: 960px;
+		margin: 0 auto;
+		}
+		
+		/* ================== Genel Stiller ================== */
+		a {
+		color: var(--tg-blue);
+		text-decoration: none;
+		}
+		a:hover {
+		text-decoration: underline;
+		}
+
+		code {
+		background-color: #f1f1f1;
+		padding: 2px 6px;
+		border-radius: 4px;
+		font-family: monospace;
+		font-size: 0.94em;
+		color: var(--tg-blue);
+		}
+		
+		h1, h2, h3, h4 {
+		font-weight: 800;
+		line-height: 1.3;
+		margin-bottom: 1rem;
+		}
+		
+		h1 {
+		font-size: 2.3rem;
+		color: var(--tg-blue);
+		text-align: center;
+		}
+		
+		.subtitle {
+		font-size: 1.2rem;
+		color: var(--text-light);
+		text-align: center;
+		max-width: 700px;
+		margin: 0 auto 1.5rem;
+		line-height: 1.6;
+		}
+
+		.notice-box {
+		background: #f0f9ff;
+		border-left: 4px solid var(--tg-blue);
+		padding: 1.2rem;
+		margin: 1.5rem auto 2rem;
+		border-radius: 8px;
+		font-size: 0.98rem;
+		max-width: 800px;
+		}
+		
+		h2 {
+		font-size: 1.75rem;
+		margin-top: 2.5rem;
+		padding-bottom: 0.6rem;
+		border-bottom: 2px solid var(--border-color);
+		}
+		
+		h3 {
+		font-size: 1.35rem;
+		color: #333;
+		}
+		
+		h4 {
+		font-size: 1.15rem;
+		color: var(--tg-blue);
+		margin: 1.4rem 0 0.8rem;
+		}
+		
+		p {
+		margin-bottom: 1rem;
+		}
+
+		ul, ol {
+		padding-left: 1.5rem;
+		margin: 1rem 0;
+		}
+		
+		li {
+		margin-bottom: 0.6rem;
+		}
+		
+		/* ================== Düzen Bileşenleri ================== */
+		.feature-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.5rem;
+		margin: 1.5rem 0;
+		}
+		
+		.feature-card {
+		background: var(--card-bg);
+		padding: 1.4rem;
+		border-radius: var(--radius);
+		box-shadow: var(--shadow);
+		border: 1px solid #eee;
+		}
+
+		.step-container {
+		display: flex;
+		flex-direction: column;
+		gap: 1.4rem;
+		margin: 1.5rem 0;
+		}
+		
+		.step-card {
+		background: var(--card-bg);
+		padding: 1.6rem;
+		border-radius: var(--radius);
+		box-shadow: var(--shadow);
+		border: 1px solid #eee;
+		}
+		
+		.faq-list {
+		display: flex;
+		flex-direction: column;
+		gap: 1.2rem;
+		}
+		
+		.faq-item {
+		background: var(--card-bg);
+		padding: 1.3rem;
+		border-radius: var(--radius);
+		box-shadow: var(--shadow);
+		border: 1px solid #eee;
+		}
+
+		footer {
+		text-align: center;
+		padding: 2rem 0 1rem;
+		color: var(--text-light);
+		font-size: 0.95rem;
+		border-top: 1px solid var(--border-color);
+		margin-top: 2rem;
+		}
+		
+        .footer {
+            background: #212529;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: #00c6ff;
+            text-decoration: none;
+        }
+		
+		
+		/* ================== Duyarlı Kırılma Noktaları ================== */
+		@media (min-width: 768px) {
+		body {
+		padding: 5px;
+		}
+		h1 {
+		font-size: 2.7rem;
+		}
+		.subtitle {
+		font-size: 1.35rem;
+		}
+		h2 {
+		font-size: 2rem;
+		}
+		}
+
+		@media (min-width: 1024px) {
+		body {
+		padding: 5px;
+		}
+		.feature-grid {
+		grid-template-columns: repeat(2, 1fr);
+		}
+		}
+		
+		@media (max-width: 480px) {
+		h1 {
+		font-size: 1.9rem;
+		}
+		.subtitle {
+		font-size: 1.1rem;
+		padding: 0 8px;
+		}
+		.notice-box {
+		padding: 1rem;
+		font-size: 0.9rem;
+		}
+		.step-card, .feature-card, .faq-item {
+		padding: 1.2rem;
+		}
+		}
+		
+
+		
+		</style>
+
+
+<div class="container-fluid  text-break">
+<div class="row" style="background:linear-gradient(135deg, var(--tg-blue) 0%, var(--tg-blue-light) 50%, var(--tg-gray) 100%);">
+<div class="row" >
+    <div class="col-sm-2 d-none d-sm-block" >
+    </div>
+	<div class="col-sm-4 align-self-end"  >
+		<a href='https://twittervideodownloaderx.com' style="text-decoration:none"><img  data-src='/static/logo.png' src='/static/pix.jpg' class="img-fluid lazy align-text-bottom" alt='site logosu'><span  class='align-text-bottom text-wrap fs-3' style="font-style:italic;color:white;font-family:'Tektur',sans-serif;">Twittervideodownloaderx</span></a>
+    </div>
+	
+	<div class="col-sm-4 d-flex justify-content-end align-items-center" id="webdes">
+			<ul  style='padding-top:25px;color:white'  class="nav nav-tabs" >
+				<li style='display:inline;'><a href='https://twittervideodownloaderx.com' style='text-decoration: none;color:white'>Ana Sayfa</a>&nbsp;&nbsp;</li>
+	
+				<div class="text-end mb-3">
+					<div class="dropdown d-inline-block">
+						<button class="btn btn-sm btn-outline-light d-flex align-items-center gap-1"
+								type="button"
+								id="langDropdown"
+								data-bs-toggle="dropdown"
+								aria-expanded="false">
+						<i class="fa-solid fa-video"></i>
+						<span>Video İndirme Araçları</span>
+						</button>
+				
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+							{{toollistele|safe}}
+						</ul>
+					</div>&nbsp;&nbsp;
+				</div>
+				
+				<div class="text-end mb-3">
+					<div class="dropdown d-inline-block">
+						<button class="btn btn-sm btn-outline-light d-flex align-items-center gap-1"
+								type="button"
+								id="langDropdown"
+								data-bs-toggle="dropdown"
+								aria-expanded="false">
+						<i class="bi bi-globe"></i>
+						<span>🇹🇷 Türkçe</span>
+						</button>
+				
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+							{{langlistele|safe}}
+						</ul>
+					</div>
+				</div>
+			</ul>
+		</div>
+	<div class="col-sm-2" id='langweb' >
+	</div>
+</div>
+<div class="row" >
+    <div class="col-md-2 d-none d-md-block">
+    </div> 
+    <div class="col-md-8"  style="border-width:1px;border-style: solid;background-color:#F5F7FA">
+	
+	
+		<br />
+		<div id='titleweb'  style='text-align:center;color:#2D3E50' >
+			<h1 style='font-family: "Tektur",sans-serif;'>✈️ Telegram Video İndirici</h1>
+			<p class="subtitle">Telegram'daki halka açık kanal/grup videolarını ücretsiz çevrimiçi indirin · Orijinal HD MP4 · Hesap girişi gerekmez · Gizliliğinizi korur</p>
+		</div> 
+		<div id='ad' >
+		</div>
+		<div style='text-align:center'>
+		
+		<input type='text' id='mainsource' style='width:80%;display:inline;color:#2D3E50' placeholder="Telegram bağlantısını girin" >
+		</div>
+		<div style='text-align:center;color:#2D3E50'>
+		Örnek Url: https://t.me/durov/375?single
+		</div>
+		<br/>
+		<div style='text-align:center'>
+		<button type="button" class="btn" id='bigbutton' style='background-color:#FF6B35;color:white'><i class="bi bi-download"></i> Videoyu İndir</button>
+		</div>
+		<br/>
+		
+		<div class="spinner-grow text-primary text-center" role="status" style='display:none;font-size:3em' id='loader'>
+			<span class="visually-hidden">İndiriliyor...</span>
+		</div>
+		
+		<div class=""  id='hashshow' style='color:#2D3E50'>
+		</div> 
+		<br />
+		
+		
+	</div>
+	<div class="col-md-2 d-none d-md-block">
+	</div>
+</div>
+<div class="row" >
+	<p>&nbsp;<span>{% csrf_token %}</span></p>
+</div>
+</div>
+
+<div class="row" style='margin-top:3em;background-color:#F5FAFB'>
+	<div class="col-sm-2 d-none d-md-block">
+	</div> 
+	<div class="col-sm-8"  >
+
+	<div class="container">
+	
+		<div class="notice-box">
+		🔒 <strong>Önemli Not:</strong> Bu araç <strong>sadece halka açık kanal/grup içeriğini destekler</strong>, <strong>özel sohbetlere, gizli gruplara veya korumalı içeriğe erişemez</strong>. Hiçbir videoyu saklamıyoruz, Telegram API izinleri talep etmiyoruz, tüm işlemler yerel olarak yapılır. Lütfen Telegram Hizmet Şartlarına uyun, içerik üreticilerinin haklarına saygı gösterin.
+		</div>
+
+
+		<section>
+		<h2>✨ Temel Özellikler ve Kısıtlamalar Açıklaması</h2>
+		<div class="feature-grid">
+		<div class="feature-card">
+		<h4>🎥 Halka Açık Kanal Videolarını İndirme</h4>
+		<p>Telegram halka açık kanal/gruplarının web sürümünden (t.me/KanalAdı/MesajID) video indirmeyi destekler, orijinal kaliteyi korur (1080P'ye kadar).</p>
+		</div>
+		<div class="feature-card">
+		<h4>⚡ Hesap Gerektirmez</h4>
+		<p>Telegram telefon numarası, API anahtarı veya giriş bilgileri sağlamanıza gerek yoktur. Tamamen anonim kullanın, hesap güvenliğinizi koruyun.</p>
+		</div>
+		<div class="feature-card">
+		<h4>🛡️ Gizlilik Öncelikli</h4>
+		<p>Tüm analiz istemci tarafında yapılır, video doğrudan bağlantıları sunucularımızdan geçmez, IP veya indirme geçmişi kaydedilmez.</p>
+		</div>
+		<div class="feature-card">
+		<h4>📱 Çoklu Platform Desteği</h4>
+		<p>iOS, Android, Windows, macOS ile uyumludur, ana tarayıcılar (Chrome, Safari, Firefox) kullanılabilir.</p>
+		</div>
+		</div>
+		<p><strong>✅ Destekler:</strong> Halka açık kanal/grupların web sürümü videoları (t.me bağlantıları), korumasız içerik<br>
+		<strong>❌ Desteklemez:</strong> Özel sohbet içeriği, gizli gruplar, korumalı içerik ("iletim yasak"), Telegram Premium özel içerik, GIF'ten video dönüştürme</p>
+		<p><strong>⚠️ Önemli Kısıtlama:</strong> Telegram standart halka açık video bağlantıları sağlamaz, bu araç <strong>Telegram Uygulaması içinden doğrudan indiremez</strong>. Halka açık kanal/grupların <strong>web sürümü bağlantılarını</strong> kullanmalısınız (format: <code>https://t.me/KanalAdı/123</code>).</p>
+		</section>
+
+		<section>
+		<h2>📥 Detaylı Kullanım Kılavuzu (3 Adımda Kolay İndirme)</h2>
+		<div class="step-container">
+		<div class="step-card">
+		<h4>Adım 1: Telegram Halka Açık Kanal Video Bağlantısını Alın</h4>
+		<p><strong>Yöntem A: Telegram Uygulaması Üzerinden (Önerilir)</strong></p>
+		<ol>
+		<li>Telegram Uygulamasını açın, video indirmek istediğiniz <strong>halka açık kanal veya gruba</strong> girin.</li>
+		<li>Hedef video mesajına uzun basın → Sağ alt köşedeki <strong>⋮ (Daha Fazla)</strong>'ya dokunun → <strong>"Bağlantıyı Kopyala"</strong> seçin.</li>
+		<li>Bağlantı formatı şu olmalıdır:<br>
+		<code>https://t.me/KanalAdı/123</code><br>
+		veya<br>
+		<code>https://t.me/c/123456789/123</code>
+		</li>
+		</ol>
+		<p><strong>Yöntem B: Telegram Web Üzerinden</strong></p>
+		<ol>
+		<li>Tarayıcıda <a href="https://web.telegram.org" target="_blank">web.telegram.org</a>'u açın.</li>
+		<li>Telegram hesabınıza giriş yapın, halka açık kanalı bulun.</li>
+		<li>Video mesajının zaman damgasına sağ tıklayın → <strong>"Bağlantı Adresini Kopyala"</strong> seçin.</li>
+		</ol>
+		<p><strong>💡 Önemli İpucu:</strong> Kanal/grubun <strong>halka açık</strong> durumda olduğundan emin olun (katılmadan görüntülenebilir). Özel içerik indirilemez.</p>
+		</div>
+
+		<div class="step-card">
+		<h4>Adım 2: Bağlantıyı Yapıştırın ve Ayrıştırın</h4>
+		<ol>
+		<li>Bu indirici sayfasına dönün.</li>
+		<li>Kopyalanan t.me bağlantısını üstteki giriş kutusuna yapıştırın.</li>
+		<li><strong>【Videoyu Ayrıştır】</strong> butonuna tıklayın.</li>
+		</ol>
+		<p>Sistem otomatik olarak şunları yapacak:<br>
+		• Bağlantının halka açık içeriğe işaret edip etmediğini doğrular.<br>
+		• Video meta verilerini (başlık, süre, küçük resim) çıkarır.<br>
+		• Doğrudan indirme bağlantıları (MP4 formatı) oluşturur.<br>
+		⏳ Ayrıştırma işlemi genellikle video boyutuna bağlı olarak 3~8 saniye sürer.</p>
+		</div>
+		
+		<div class="step-card">
+		<h4>Adım 3: HD Videoyu İndirin</h4>
+		<ul>
+		<li>Ayrıştırma başarıyla tamamlandıktan sonra, <strong>【MP4 İndir】</strong> butonuna tıklayın.</li>
+		<li>Tarayıcı orijinal HD video dosyasını indirmeye otomatik başlayacaktır.</li>
+		<li>Dosya varsayılan olarak cihazın <strong>"İndirilenler" klasörüne</strong> kaydedilir.</li>
+		</ul>
+		<p><strong>📌 Kullanım Önerileri:</strong></p>
+		<ul>
+		<li>Büyük dosya indirmesi kesiliyor mu? → İndirme yöneticisi kullanın (IDM, Free Download Manager gibi).</li>
+		<li>Ses çıkarmak mı gerekiyor? → MP4'ü indirin, ardından çevrimiçi bir araçla MP3'e dönüştürün.</li>
+		<li>Önemli materyal mi saklıyorsunuz? → Meta verileri (başlık, kaynak bağlantı) da yedeklemeniz önerilir.</li>
+		</ul>
+		<p><strong>⚠️ Dikkat:</strong> Telegram video doğrudan bağlantılarının geçerlilik süresi genellikle 1~2 saattir, lütfen zamanında indirmeyi tamamlayın.</p>
+		</div>
+		</div>
+		</section>
+
+		<section>
+		<h2>⚙️ Teknik İlke Açıklaması</h2>
+		<ul>
+		<li>Bu araç, Telegram web sürümü halka açık mesajlarının DOM yapısını analiz ederek video doğrudan bağlantılarını (<code>&lt;video&gt;</code> etiketindeki <code>src</code> özelliği) çıkarır.</li>
+		<li>Telegram'ın daha yeni sürümleri için, resmi <code>t.me</code> sayfasının JSON yapılandırması kullanılarak medya URL'leri çıkarılır, <strong>hiçbir üçüncü taraf API'sine bağlı değildir</strong>.</li>
+		<li>Videolar orijinal MP4 formatında sağlanır, yükleme sırasındaki tam çözünürlük ve bit hızı korunur, <strong>sıkıştırma yok, filigran yok</strong>.</li>
+		<li><strong>Tüm işlemler tarayıcı tarafında tamamlanır</strong>: JavaScript doğrudan video URL'sini alır ve indirmeyi tetikler, herhangi bir sunucu aktarımından geçmez.</li>
+		<li>Korumalı içerik ("iletim yasak" ayarlanmış videolar) için Telegram medya akışını şifreler, bu nedenle bu tür içerik bu araç üzerinden indirilemez.</li>
+		</ul>
+		<p><strong>Teknik Kısıtlama Açıklaması:</strong> Telegram resmi bir indirme API'si sağlamadığından ve web yapısını sık sık güncellediğinden, bu araç Telegram web sürümü yenilendikten sonra geçici olarak çalışmayabilir. Uyumluluğu korumak için zamanında güncelleme yapma sözü veriyoruz.</p>
+		</section>
+		
+		<section>
+		<h2>⚠️ Gizlilik Politikası ve Yasal Bildirim</h2>
+		<ol>
+		<li><strong>Gizlilik Koruması:</strong> Bu araç hiçbir kullanıcı verisi toplamaz, saklamaz. Tüm bağlantı ayrıştırması tarayıcıda yerel olarak yapılır, sunuculara gönderilmez.</li>
+		<li><strong>Sadece Halka Açık İçerik:</strong> Özel sohbetleri, ücretli kanalları veya yetkisiz içeriği indirmeye çalışmak kesinlikle yasaktır. Telegram koruma mekanizmalarını atlatma yöntemleri sunmuyoruz.</li>
+		<li><strong>Telif Hakkı Uyumluluğu:</strong> İndirilen içerik sadece kişisel kullanım içindir. Yeniden yüklemek, ticari dağıtım veya içerik üreticilerinin haklarını ihlal etmek yasaktır. <a href="https://core.telegram.org/api/terms" target="_blank">Telegram Hizmet Şartlarına</a> saygı gösterin.</li>
+		<li><strong>Sorumluluk Reddi Maddesi:</strong> Kullanıcılar indirme eylemlerinin yasallığını kendileri değerlendirmelidir. Bu aracın kötüye kullanımından kaynaklanan hesap askıya alınması, yasal anlaşmazlıklar için sorumluluk kabul etmiyoruz.</li>
+		<li><strong>Garanti Yok:</strong> Bu araç "olduğu gibi" sunulur, tüm Telegram videolarıyla %100 uyumluluk garantisi vermez, veri kaybından sorumlu değildir.</li>
+		</ol>
+		</section>
+
+		<section>
+		<h2>❓ Sıkça Sorulan Sorular (SSS)</h2>
+		<div class="faq-list">
+		<div class="faq-item">
+		<strong>S: Neden "Bağlantı ayrıştırılamıyor" mesajı görünüyor?</strong><br>
+		Olası nedenler:<br>
+		• Bağlantı halka açık kanal/grup içeriği değil (örn: özel sohbet bağlantısı)<br>
+		• Kanal gizlilik koruması ayarlamış<br>
+		• Telegram web sürümü yapısı güncellendi (en kısa sürede düzelteceğiz)<br>
+		• Bağlantı formatı hatalı (<code>t.me/</code> ile başlamalı)
+		</div>
+		<div class="faq-item">
+		<strong>S: Şifreli gruplardan veya özel sohbetlerden video indirebilir miyim?</strong><br>
+		<strong>Hayır.</strong> Bu araç Telegram güvenlik politikalarını katı bir şekilde takip eder, sadece tamamen halka açık, giriş yapmadan erişilebilen içeriği destekler. Özel içerik için Telegram resmi istemcisi erişimi gereklidir.
+		</div>
+		<div class="faq-item">
+		<strong>S: İndirilen videolarda filigran var mı veya kalite düşüyor mu?</strong><br>
+		Yok. Telegram sunucularındaki orijinal video dosyalarını sağlıyoruz, Telegram Uygulamasında izlenen kaliteyle tamamen aynı, ek filigran içermez.
+		</div>
+		<div class="faq-item">
+		<strong>S: iOS cihazlarda indirdikten sonra dosyayı neden bulamıyorum?</strong><br>
+		iOS kısıtlaması: Safari'de indirilen dosyalar "Dosyalar" Uygulaması → "iCloud Drive" → "İndirilenler" klasörüne kaydedilir. İndirilen içeriği yönetmek için "Dosyalar" Uygulamasını yüklemeniz önerilir.
+		</div>
+		<div class="faq-item">
+		<strong>S: Telegram kanallarındaki belge veya ses dosyalarını indirmeyi destekliyor mu?</strong><br>
+		Mevcut sürüm sadece video indirmeyi destekler. Çoklu format desteği (PDF, MP3, ZIP, vb.) geliştiriyoruz, lütfen gelecek güncellemeleri bekleyin!
+		</div>
+		<div class="faq-item">
+		<strong>S: Bu araç güvenli mi? Telegram hesabımı çalar mı?</strong><br>
+		Kesinlikle güvenli. Bu araç <strong>hiçbir Telegram hesap bilgisini (telefon numarası, oturum, kişiler) talep etmez, toplamaz</strong>. Sadece halka açık web sayfalarının medya bağlantılarını işler, Telegram hesabınızdan tamamen izoledir.
+		</div>
+		</div>
+		</section>
+
+		<footer>
+		<p>Sorun mu yaşıyorsunuz veya iyileştirme öneriniz mi var? Geri bildiriminize değer veriyoruz!<br>
+		📧 E-posta: <a href="{{mailtocontactmail}}">{{contactmail}}</a><br>
+		💬 GitHub Issues: <a href="{{githublink}}" target="_blank">{{githublink}}</a></p>
+		<p style="margin-top: 1.2rem; font-style: italic; color: #666;">
+		<strong>Telegram Video İndirici</strong>'yi kullandığınız için teşekkür ederiz ——<br>
+		Gizliliğe odaklanır, kurallara saygı duyar, halka açık içeriğin özgürce akmasını sağlar. 🕊️
+		</p>
+		<p style="margin-top: 0.8rem; font-size: 0.85rem; color: #999;">
+		Bu araç Telegram FZ-LLC ile herhangi bir ilişkisi yoktur. Telegram, Telegram FZ-LLC'nin tescilli ticari markasıdır.
+		</p>
+		</footer>
+
+	<footer class="footer">
+			<p>© {{year_string}} Telegram Video Downloader. Tüm hakları saklıdır.</p>
+			<p>Bu site Telegram, Inc. ile resmi bir ilişkisi yoktur | 
+			<a href="/privacy-policy" style="color: #00c6ff;">Gizlilik Politikası</a> | 
+			<a href="/terms-of-service" style="color: #00c6ff;">Kullanım Şartları</a> | 
+			<a href="/about-us" style="color: #00c6ff;">Hakkımızda</a>| 
+			<a href="/contact-us" style="color: #00c6ff;">Bize Ulaşın</a>
+			</p>
+			<p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">
+				Bu araç sadece kişisel öğrenme ve araştırma için kullanılmalıdır, kullanıcılar tüm yasal sorumlulukları üstlenmelidir
+			</p>
+			<p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">
+				Telif hakkıyla korunan içeriği indirmek ilgili yasaları ihlal edebilir, lütfen yerel yasalara uyun
+			</p>
+	</footer>
+
+
+	</div>
+
+	</div>
+	<div class="col-sm-2 d-none d-md-block">
+	</div>
+</div>
+</div>
+<script src="/static/jquery.min.js"  crossorigin="anonymous"></script>
+<script src="/static/popper.min.js"  crossorigin="anonymous"></script>
+
+<script data-ad-client="ca-pub-3339068484857413" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script type="text/javascript" src="/static/jquery.lazy.min.js"></script>
+
+<script type="text/javascript" src="/static/shareon.iife.js" defer  init></script>
+<script>
+	$(function() {
+		$('.lazy').Lazy();
+	});
+</script>
+<script type="application/ld+json">
+	{
+	"@context": "http://schema.org/",
+	"@type": "Organization",
+	"url": "https://twittervideodownloaderx.com",
+	"logo": "https://twittervideodownloaderx.com/static/logo.png"
+	}
+</script>
+
+<script>
+function mp3turn(obj){
+	var inputvalue =obj.getAttribute('va');
+	//alert(inputvalue);
+	if (inputvalue==='')
+	{
+		alert('456');
+		return false;
+	}
+	$('#mp3placeholder').empty();
+	var spinner='<span style="font-size:1.5em"><span class="spinner-loader" ></span>';
+	$('#mp3placeholder').append(spinner+'<br />Video MP3\'e Dönüştürülüyor</span>');
+	var xhr = new XMLHttpRequest();
+	var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+	xhr.open('post', '/getmp3', true);
+	xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	xhr.send('inputvalue='+inputvalue);
+	xhr.onreadystatechange = processresponse;
+	function processresponse() {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			// Everything is good, the response was received.
+		if (xhr.status === 200) {
+			// Perfect!
+			var rstring=xhr.responseText;
+			//alert(xhr.responseText);
+			var response = JSON.parse(rstring);
+			var statue=response.statue;
+			if (statue=='NO'){
+				$('#mp3placeholder').html('Sonuç yok');
+				return;
+				}
+			var mp3filepath=response.mp3filepath;
+			//alert(htimage);
+			$('#mp3placeholder').empty();
+			var intext='';
+			var intext='<a href="/'+mp3filepath+'" target="_blank" class="btn btn-danger">Video MP3 İndir</a>';
+			$('#mp3placeholder').html(intext);
+			}
+		else{
+			$('#mp3placeholder').html('<p style="font-size:1.5em">Sonuç yok</p>');
+		}
+		}
+	}
+};
+function gifturn(obj){
+	var inputvalue =obj.getAttribute('va');
+	//alert(inputvalue);
+	if (inputvalue==='')
+	{
+		alert('456');
+		return false;
+	}
+	$('#gifplaceholder').empty();
+	var spinner='<span style="font-size:1.5em"><span class="spinner-loader" ></span>';
+	$('#gifplaceholder').append(spinner+'<br />Video GIF\'e Dönüştürülüyor</span>');
+	var xhr = new XMLHttpRequest();
+	var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+	xhr.open('post', '/getgif', true);
+	xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	xhr.send('inputvalue='+inputvalue);
+	xhr.onreadystatechange = processresponse;
+	function processresponse() {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			// Everything is good, the response was received.
+		if (xhr.status === 200) {
+			// Perfect!
+			var rstring=xhr.responseText;
+			//alert(xhr.responseText);
+			var response = JSON.parse(rstring);
+			var statue=response.statue;
+			if (statue=='NO'){
+				$('#gifplaceholder').html('Sonuç yok');
+				return;
+				}
+			var giffilepath=response.giffilepath;
+			//alert(htimage);
+			$('#gifplaceholder').empty();
+			var intext='';
+			var intext='<a href="/'+giffilepath+'" target="_blank" class="btn btn-danger">Video GIF İndir</a>';
+			$('#gifplaceholder').html(intext);
+			}
+		else{
+			$('#gifplaceholder').html('<p style="font-size:1.5em">Sonuç yok</p>');
+		}
+		}
+	}
+};
+$(document).ready(function() {
+$("#mainsource").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $("#bigbutton").click();
+    }
+});
+$('#bigbutton').on('click',function(){
+	var inputvalue = $('#mainsource').val();
+	if (inputvalue==='')
+	{
+		return false;
+	}
+	$('#hashshow').empty();
+	var spinner='<div style="text-align:center;"><span style="font-size:1.5em;"><span style="background-color:#007FFF;" class="spinner-loader" ></span>';
+	$('#hashshow').append(spinner+'<br />Video indiriliyor</span></div>');
+	
+	//document.getElementById("loader").style.display = "block";
+
+	var xhr = new XMLHttpRequest();
+	var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+	xhr.open('post', '/getitem_telegram', true);
+	xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	xhr.send('inputvalue='+inputvalue);
+	xhr.onreadystatechange = processresponse;
+	function processresponse() {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			// Everything is good, the response was received.
+		if (xhr.status === 200) {
+			// Perfect!
+			document.getElementById("loader").style.display = "none";
+			var rstring=xhr.responseText;
+			//alert(xhr.responseText);
+			var response = JSON.parse(rstring);
+			var statue=response.statue;
+			if (statue=='NO'){
+				$('#hashshow').html('Sonuç yok');
+				return;
+				}
+				
+				
+				
+				var v_thumbnail=encodeURI(response.v_thumbnail);//
+				
+				var v_title=response.v_title;//
+				var v_webpage_url=encodeURI(response.v_webpage_url);//
+				var v_duration_string=response.v_duration_string;//
+				//var v_uploader=response.v_uploader;
+				//var v_uploader_url=response.v_uploader_url;
+				var v_upload_date=response.v_upload_date;//
+				//var v_view_count=response.v_view_count;
+				//var v_like_count=response.v_like_count;
+				//var v_comment_count=response.v_comment_count;
+				var v_ext=response.v_ext;//
+				//var v_width=response.v_width;
+				//var v_height=response.v_height;
+				var v_resolution=response.v_resolution;//
+				var v_aspect_ratio=response.v_aspect_ratio;//
+				
+				var v_des=response.v_des;//
+
+				var v_formats = response.formatslist;
+				//var v_thumbnails = response.thumbnailslist;
+			
+
+			$('#hashshow').empty();
+			var intext='';
+			var intext=intext+'<div class="row" ><div class="col-sm-6" ><div><b>'+v_title+'</b></div><div><img src="'+v_thumbnail+'"  class="img-fluid" /></div>';
+			
+
+			var intext=intext+'</div><div class="col-sm-6 align-self-end" ><br /><br />';
+			
+			for (let i = 0; i < v_formats.length; i++) {
+			
+				turl=encodeURI(v_formats[i][0]);
+				tres=v_formats[i][1];
+				var intext=intext+'<div><i class="bi bi-cloud-download"></i> <a style="text-decoration:none" href="'+turl+'">Video indir (çözünürlük '+tres+')</a></div>';
+			}
+			
+			//var intext=intext+'<br />'
+			//for (let i = 0; i < v_thumbnails.length; i++) {
+			
+			//	turl=v_thumbnails[i][0];
+			//	tres=v_thumbnails[i][1];
+			//	var intext=intext+'<div><i class="bi bi-file-image"></i> <a style="text-decoration:none" href="'+turl+'">Küçük resim indir (çözünürlük '+tres+')</a></div>';
+			//}
+			
+			var intext=intext+'</div></div><hr />';
+	
+			var intext=intext+'<div class="row" ><div class="col-sm-6" ><div><b>Başlık: </b>'+v_title+'</div><div><b>Web sayfası bağlantısı: </b>'+v_webpage_url+'</div><div><b>Süre: </b>'+v_duration_string+'</div><div><b>Yükleme tarihi: </b>'+v_upload_date+'</div></div>';
+	
+			var intext=intext+'<div class="col-sm-6" ><div><b>Dosya formatı: </b>'+v_ext+'</div><div><b>Çözünürlük: </b>'+v_resolution+'</div><div><b>En-boy oranı: </b>'+v_aspect_ratio+'</div></div></div>';
+
+			var intext=intext+'<div class="row" ><div class="col-sm-12" ><div><b>Video açıklaması: </b>'+v_des+'</div></div></div>';
+
+
+			var intext=intext+'<div class="row" >'+'<div class="shareon shadow bg-light bg-gradient"><a class="facebook" data-title="'+v_title+'" ><span  style="font-size:1em">facebook</span></a><a class="linkedin" data-title="'+v_title+'" ><span style="font-size:1em">linkedin</span></a>	<a class="mastodon" data-title="'+v_title+'"><span  style="font-size:1em">mastodon</span></a><a class="messenger" data-fb-app-id="0123456789012345" data-title="'+v_title+'"><span  style="font-size:1em">messenger</span></a><a class="pinterest" data-title="'+v_title+'"><span  style="font-size:1em“>pinterest</span></a><a class="reddit" data-title="'+v_title+'"><span  style="font-size:0.5em">reddit</span></a><a class="telegram" data-title="'+v_title+'"><span  style="font-size:1em">telegram</span></a><a class="twitter" data-title="'+v_title+'"><span  style="font-size:1em“>twitter</span></a><a class="viber" data-title="'+v_title+'"><span  style="font-size:1em">viber</span></a><a class="vkontakte" data-title="'+v_title+'"><span  style="font-size:1em">vkontakte</span></a><a class="whatsapp" data-title="'+v_title+'"><span  style="font-size:1em">whatsapp</span></a></div>';
+			
+			
+			var intext=intext+'</div>';
+			
+			//$('#hashshow').append('<div>'+'<img src="'+htsimage+'" />'+'</div>'+'<p>'+trunttext+'</p>');
+			$('#hashshow').html(intext);
+			}
+		else{
+			document.getElementById("loader").style.display = "none";
+			$('#hashshow').html('<p style="font-size:1.5em">Sonuç yok</p>');
+		}
+		}
+	}
+});
+});
+</script>
+<script>
+$(document).ready(function() {
+  $('.droplang').click(function(e) {
+    e.preventDefault();
+    var selectedValue = $(this).data('value');
+	var domainname='https://twittervideodownloaderx.com';
+	if (selectedValue==='en')
+	{
+		window.location=domainname+'/{{baseurlstring}}';
+	}
+	else
+	{
+	window.location=domainname+'/{{baseurlstring}}_'+selectedValue;
+	}
+  });
+});
+</script>
+
+
+<script>
+$(document).ready(function() {
+  $('.droptool').click(function(e) {
+    e.preventDefault();
+    var selectedtoolValue = $(this).data('value');
+	var domainname='https://twittervideodownloaderx.com';
+	var current_lang='{{lang}}';
+	
+	if (selectedtoolValue==='x_twitter')
+	{
+		if (current_lang==='en')
+			{
+			window.location=domainname;
+			}
+		else
+			{
+			window.location=domainname+'/'+current_lang;
+			}
+	}
+	else
+	{
+		if (current_lang==='en')
+		
+			{
+			window.location=domainname+'/'+selectedtoolValue+'_downloader';
+			}
+		else
+			{
+			window.location=domainname+'/'+selectedtoolValue+'_downloader_'+'{{lang}}';
+			}
+	}
+  });
+});
+</script>
+<script type="text/javascript">
+var sc_project=11698515; 
+var sc_invisible=1; 
+var sc_security="38970939"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+
+<link  rel="stylesheet" href='/static/wait.css' >
+</body>
+</html>
