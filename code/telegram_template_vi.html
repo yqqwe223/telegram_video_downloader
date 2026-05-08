@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="vi-VN">
+<head>
+<meta name="msvalidate.01" content="5CCC6EE8FF816477D80A4DE459A738F1" />
+{% load static %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Công cụ Tải video Telegram: Bạn có thể sử dụng công cụ tải video Telegram của chúng tôi để tải bất kỳ video hoặc GIF nào và chuyển đổi chúng sang định dạng MP3 hoặc GIF. Còn chờ gì nữa? Hãy thử ngay công cụ tải video Telegram của chúng tôi!">
+<meta name="keywords" content="Công cụ tải video Telegram">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@twittervideodownloaderx.com">
+<meta name="twitter:title" content="Công cụ Tải video Telegram – Lấy video và GIF từ Telegram">
+<meta name="twitter:description" content="Công cụ Tải video Telegram: Bạn có thể sử dụng công cụ tải video Telegram của chúng tôi để tải bất kỳ video hoặc GIF nào và chuyển đổi chúng sang định dạng MP3 hoặc GIF. Còn chờ gì nữa? Hãy thử ngay công cụ tải video Telegram của chúng tôi!">
+<meta name="twitter:image" content="https://twittervideodownloaderx.com/static/logo.png  ">
+<meta name="twitter:image:alt" content="Công cụ Tải video Telegram – Lấy video và GIF từ Telegram">
+
+<meta property="og:title" content="Công cụ Tải video Telegram – Lấy video và GIF từ Telegram" />
+<meta property="og:description" content="Công cụ Tải video Telegram: Bạn có thể sử dụng công cụ tải video Telegram của chúng tôi để tải bất kỳ video hoặc GIF nào và chuyển đổi chúng sang định dạng MP3 hoặc GIF. Còn chờ gì nữa? Hãy thử ngay công cụ tải video Telegram của chúng tôi!" />
+<meta property="og:image" content="https://twittervideodownloaderx.com/static/logo.png  " />
+<meta property="og:image:alt" content="Công cụ Tải video Telegram – Lấy video và GIF từ Telegram" />
+
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css    ">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css    " />
+<link href="https://gcore.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css  " rel="stylesheet">
+<script src="https://gcore.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js  "></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css  " rel="stylesheet">
+
+<link rel="stylesheet" href="/static/wait.css" >
+<link rel="stylesheet" href="/static/shareon.min.css" >
+<link rel="preconnect" href="https://fonts.googleapis.com  ">
+<link rel="preconnect" href="https://fonts.gstatic.com  " crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+
+{{websiteSchema|safe}}
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<link rel="icon" href="{% static 'favicon.ico' %}">
+<title>Công cụ Tải video Telegram – Lấy video và GIF từ Telegram</title>
+</head>
+<body>
+
+		<style>
+		/* ================== Biến toàn cục và Reset ================== */
+		:root {
+		--tg-blue:      #0088CC;
+		--tg-blue-dark: #006BA3;
+		--tg-blue-light:#54A7E8;
+		--tg-gray:      #F5F5F5;
+		
+		
+		--bg-light: #fafafa;
+		--text-dark: #212121;
+		--text-light: #5f6368;
+		--card-bg: #ffffff;
+		--border-color: #e0e0e0;
+		--shadow: 0 2px 10px rgba(0,0,0,0.08);
+		--radius: 12px;
+		}
+		
+		
+		* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		}
+		
+		body {
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+		line-height: 1.65;
+		color: var(--text-dark);
+		background-color: var(--bg-light);
+		padding: 5px;
+		}
+		
+		.container {
+		max-width: 960px;
+		margin: 0 auto;
+		}
+		
+		/* ================== Kiểu chung ================== */
+		a {
+		color: var(--tg-blue);
+		text-decoration: none;
+		}
+		a:hover {
+		text-decoration: underline;
+		}
+
+		code {
+		background-color: #f1f1f1;
+		padding: 2px 6px;
+		border-radius: 4px;
+		font-family: monospace;
+		font-size: 0.94em;
+		color: var(--tg-blue);
+		}
+		
+		h1, h2, h3, h4 {
+		font-weight: 800;
+		line-height: 1.3;
+		margin-bottom: 1rem;
+		}
+		
+		h1 {
+		font-size: 2.3rem;
+		color: var(--tg-blue);
+		text-align: center;
+		}
+		
+		.subtitle {
+		font-size: 1.2rem;
+		color: var(--text-light);
+		text-align: center;
+		max-width: 700px;
+		margin: 0 auto 1.5rem;
+		line-height: 1.6;
+		}
+
+		.notice-box {
+		background: #f0f9ff;
+		border-left: 4px solid var(--tg-blue);
+		padding: 1.2rem;
+		margin: 1.5rem auto 2rem;
+		border-radius: 8px;
+		font-size: 0.98rem;
+		max-width: 800px;
+		}
+		
+		h2 {
+		font-size: 1.75rem;
+		margin-top: 2.5rem;
+		padding-bottom: 0.6rem;
+		border-bottom: 2px solid var(--border-color);
+		}
+		
+		h3 {
+		font-size: 1.35rem;
+		color: #333;
+		}
+		
+		h4 {
+		font-size: 1.15rem;
+		color: var(--tg-blue);
+		margin: 1.4rem 0 0.8rem;
+		}
+		
+		p {
+		margin-bottom: 1rem;
+		}
+
+		ul, ol {
+		padding-left: 1.5rem;
+		margin: 1rem 0;
+		}
+		
+		li {
+		margin-bottom: 0.6rem;
+		}
+		
+		/* ================== Thành phần bố cục ================== */
+		.feature-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.5rem;
+		margin: 1.5rem 0;
+		}
+		
+		.feature-card {
+		background: var(--card-bg);
+		padding: 1.4rem;
+		border-radius: var(--radius);
+		box-shadow: var(--shadow);
+		border: 1px solid #eee;
+		}
+
+		.step-container {
+		display: flex;
+		flex-direction: column;
+		gap: 1.4rem;
+		margin: 1.5rem 0;
+		}
+		
+		.step-card {
+		background: var(--card-bg);
+		padding: 1.6rem;
+		border-radius: var(--radius);
+		box-shadow: var(--shadow);
+		border: 1px solid #eee;
+		}
+		
+		.faq-list {
+		display: flex;
+		flex-direction: column;
+		gap: 1.2rem;
+		}
+		
+		.faq-item {
+		background: var(--card-bg);
+		padding: 1.3rem;
+		border-radius: var(--radius);
+		box-shadow: var(--shadow);
+		border: 1px solid #eee;
+		}
+
+		footer {
+		text-align: center;
+		padding: 2rem 0 1rem;
+		color: var(--text-light);
+		font-size: 0.95rem;
+		border-top: 1px solid var(--border-color);
+		margin-top: 2rem;
+		}
+		
+        .footer {
+            background: #212529;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: #00c6ff;
+            text-decoration: none;
+        }
+		
+		
+		/* ================== Điểm ngắt đáp ứng ================== */
+		@media (min-width: 768px) {
+		body {
+		padding: 5px;
+		}
+		h1 {
+		font-size: 2.7rem;
+		}
+		.subtitle {
+		font-size: 1.35rem;
+		}
+		h2 {
+		font-size: 2rem;
+		}
+		}
+
+		@media (min-width: 1024px) {
+		body {
+		padding: 5px;
+		}
+		.feature-grid {
+		grid-template-columns: repeat(2, 1fr);
+		}
+		}
+		
+		@media (max-width: 480px) {
+		h1 {
+		font-size: 1.9rem;
+		}
+		.subtitle {
+		font-size: 1.1rem;
+		padding: 0 8px;
+		}
+		.notice-box {
+		padding: 1rem;
+		font-size: 0.9rem;
+		}
+		.step-card, .feature-card, .faq-item {
+		padding: 1.2rem;
+		}
+		}
+		
+
+		
+		</style>
+
+
+<div class="container-fluid  text-break">
+<div class="row" style="background:linear-gradient(135deg, var(--tg-blue) 0%, var(--tg-blue-light) 50%, var(--tg-gray) 100%);">
+<div class="row" >
+    <div class="col-sm-2 d-none d-sm-block" >
+    </div>
+	<div class="col-sm-4 align-self-end"  >
+		<a href='https://twittervideodownloaderx.com' style="text-decoration:none"><img  data-src='/static/logo.png' src='/static/pix.jpg' class="img-fluid lazy align-text-bottom" alt='site logo'><span  class='align-text-bottom text-wrap fs-3' style="font-style:italic;color:white;font-family:'Tektur',sans-serif;">Twittervideodownloaderx</span></a>
+    </div>
+	
+	<div class="col-sm-4 d-flex justify-content-end align-items-center" id="webdes">
+			<ul  style='padding-top:25px;color:white'  class="nav nav-tabs" >
+				<li style='display:inline;'><a href='https://twittervideodownloaderx.com' style='text-decoration: none;color:white'>Trang chủ</a>&nbsp;&nbsp;</li>
+	
+				<div class="text-end mb-3">
+					<div class="dropdown d-inline-block">
+						<button class="btn btn-sm btn-outline-light d-flex align-items-center gap-1"
+								type="button"
+								id="langDropdown"
+								data-bs-toggle="dropdown"
+								aria-expanded="false">
+						<i class="fa-solid fa-video"></i>
+						<span>Công cụ tải video</span>
+						</button>
+				
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+							{{toollistele|safe}}
+						</ul>
+					</div>&nbsp;&nbsp;
+				</div>
+				
+				<div class="text-end mb-3">
+					<div class="dropdown d-inline-block">
+						<button class="btn btn-sm btn-outline-light d-flex align-items-center gap-1"
+								type="button"
+								id="langDropdown"
+								data-bs-toggle="dropdown"
+								aria-expanded="false">
+						<i class="bi bi-globe"></i>
+						<span>🇻🇳 Tiếng Việt</span>
+						</button>
+				
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+							{{langlistele|safe}}
+						</ul>
+					</div>
+				</div>
+			</ul>
+		</div>
+	<div class="col-sm-2" id='langweb' >
+	</div>
+</div>
+<div class="row" >
+    <div class="col-md-2 d-none d-md-block">
+    </div> 
+    <div class="col-md-8"  style="border-width:1px;border-style: solid;background-color:#F5F7FA">
+	
+	
+		<br />
+		<div id='titleweb'  style='text-align:center;color:#2D3E50' >
+			<h1 style='font-family: "Tektur",sans-serif;'>✈️ Công cụ Tải video Telegram</h1>
+			<p class="subtitle">Tải video trực tuyến miễn phí từ kênh/ nhóm công khai Telegram · MP4 gốc chất lượng cao · Không cần đăng nhập tài khoản · Bảo vệ quyền riêng tư</p>
+		</div> 
+		<div id='ad' >
+		</div>
+		<div style='text-align:center'>
+		
+		<input type='text' id='mainsource' style='width:80%;display:inline;color:#2D3E50' placeholder="Nhập liên kết telegram" >
+		</div>
+		<div style='text-align:center;color:#2D3E50'>
+		Ví dụ Url : https://t.me/durov/375?single
+		</div>
+		<br/>
+		<div style='text-align:center'>
+		<button type="button" class="btn" id='bigbutton' style='background-color:#FF6B35;color:white'><i class="bi bi-download"></i> Tải video</button>
+		</div>
+		<br/>
+		
+		<div class="spinner-grow text-primary text-center" role="status" style='display:none;font-size:3em' id='loader'>
+			<span class="visually-hidden">Đang tải xuống...</span>
+		</div>
+		
+		<div class=""  id='hashshow' style='color:#2D3E50'>
+		</div> 
+		<br />
+		
+		
+	</div>
+	<div class="col-md-2 d-none d-md-block">
+	</div>
+</div>
+<div class="row" >
+	<p>&nbsp;<span>{% csrf_token %}</span></p>
+</div>
+</div>
+
+<div class="row" style='margin-top:3em;background-color:#F5FAFB'>
+	<div class="col-sm-2 d-none d-md-block">
+	</div> 
+	<div class="col-sm-8"  >
+
+	<div class="container">
+	
+		<div class="notice-box">
+		🔒 <strong>Lưu ý quan trọng:</strong> Công cụ này <strong>chỉ hỗ trợ nội dung kênh/ nhóm công khai</strong>, <strong>không thể truy cập vào cuộc trò chuyện riêng tư, nhóm riêng tư hoặc nội dung được bảo vệ</strong>. Chúng tôi không lưu trữ bất kỳ video nào, không yêu cầu quyền truy cập API Telegram, mọi xử lý đều được thực hiện cục bộ. Vui lòng tuân thủ Điều khoản dịch vụ của Telegram, tôn trọng quyền của người sáng tạo nội dung.
+		</div>
+
+
+		<section>
+		<h2>✨ Tính năng chính & Giới hạn</h2>
+		<div class="feature-grid">
+		<div class="feature-card">
+		<h4>🎥 Tải video từ kênh công khai</h4>
+		<p>Hỗ trợ tải video từ phiên bản web của kênh/nhóm công khai Telegram (t.me/tên_kênh/ID_tin_nhắn), giữ nguyên chất lượng gốc (lên đến 1080P).</p>
+		</div>
+		<div class="feature-card">
+		<h4>⚡ Không cần tài khoản</h4>
+		<p>Không cần cung cấp số điện thoại Telegram, khóa API hoặc thông tin đăng nhập, sử dụng hoàn toàn ẩn danh, bảo vệ an toàn tài khoản của bạn.</p>
+		</div>
+		<div class="feature-card">
+		<h4>🛡️ Ưu tiên quyền riêng tư</h4>
+		<p>Tất cả phân tích được thực hiện ở phía máy khách, liên kết video trực tiếp không đi qua máy chủ của chúng tôi, không ghi lại IP hoặc lịch sử tải xuống.</p>
+		</div>
+		<div class="feature-card">
+		<h4>📱 Hỗ trợ đa nền tảng</h4>
+		<p>Tương thích với iOS, Android, Windows, macOS, các trình duyệt chính (Chrome, Safari, Firefox) đều có thể sử dụng.</p>
+		</div>
+		</div>
+		<p><strong>✅ Hỗ trợ:</strong> Video phiên bản web từ kênh/ nhóm công khai (liên kết t.me), nội dung không được bảo vệ<br>
+		<strong>❌ Không hỗ trợ:</strong> Nội dung trò chuyện riêng tư, nhóm riêng tư, nội dung được bảo vệ ("cấm chuyển tiếp"), nội dung dành riêng cho Telegram Premium, chuyển đổi GIF sang video</p>
+		<p><strong>⚠️ Giới hạn quan trọng:</strong> Telegram không cung cấp liên kết video công khai tiêu chuẩn, công cụ này <strong>không thể tải trực tiếp từ bên trong Ứng dụng Telegram</strong>. Phải sử dụng <strong>liên kết phiên bản web</strong> của kênh/ nhóm công khai (định dạng như <code>https://t.me/TenKenh/123</code>).</p>
+		</section>
+
+		<section>
+		<h2>📥 Hướng dẫn sử dụng chi tiết (Ba bước tải dễ dàng)</h2>
+		<div class="step-container">
+		<div class="step-card">
+		<h4>Bước 1: Lấy liên kết video từ kênh công khai Telegram</h4>
+		<p><strong>Phương pháp A: Qua Ứng dụng Telegram (Đề xuất)</strong></p>
+		<ol>
+		<li>Mở Ứng dụng Telegram, vào <strong>kênh hoặc nhóm công khai</strong> chứa video bạn muốn tải</li>
+		<li>Nhấn giữ tin nhắn video mục tiêu → Nhấn vào <strong>⋮ (Thêm)</strong> ở góc dưới bên phải → Chọn <strong>"Sao chép liên kết"</strong></li>
+		<li>Định dạng liên kết nên là:<br>
+		<code>https://t.me/TenKenh/123</code><br>
+		hoặc<br>
+		<code>https://t.me/c/123456789/123</code>
+		</li>
+		</ol>
+		<p><strong>Phương pháp B: Qua phiên bản web Telegram</strong></p>
+		<ol>
+		<li>Mở <a href="https://web.telegram.org" target="_blank">web.telegram.org</a> trong trình duyệt</li>
+		<li>Đăng nhập vào tài khoản Telegram của bạn, tìm kênh công khai</li>
+		<li>Nhấp chuột phải vào dấu thời gian của tin nhắn video → Chọn <strong>"Sao chép địa chỉ liên kết"</strong></li>
+		</ol>
+		<p><strong>💡 Lưu ý quan trọng:</strong> Đảm bảo kênh/ nhóm ở trạng thái <strong>công khai</strong> (có thể xem mà không cần tham gia). Nội dung riêng tư không thể tải xuống.</p>
+		</div>
+
+		<div class="step-card">
+		<h4>Bước 2: Dán liên kết và phân tích</h4>
+		<ol>
+		<li>Quay lại trang công cụ tải xuống này</li>
+		<li>Dán liên kết t.me đã sao chép vào ô nhập liệu phía trên</li>
+		<li>Nhấp vào nút <strong>【Phân tích video】</strong></li>
+		</ol>
+		<p>Hệ thống sẽ tự động:<br>
+		• Xác minh liên kết có trỏ đến nội dung công khai không<br>
+		• Trích xuất siêu dữ liệu video (tiêu đề, thời lượng, hình thu nhỏ)<br>
+		• Tạo liên kết tải xuống trực tiếp (định dạng MP4)<br>
+		⏳ Quá trình phân tích thường mất 3~8 giây, tùy thuộc vào kích thước video</p>
+		</div>
+		
+		<div class="step-card">
+		<h4>Bước 3: Tải video chất lượng cao</h4>
+		<ul>
+		<li>Sau khi phân tích thành công, nhấp vào nút <strong>【Tải MP4】</strong></li>
+		<li>Trình duyệt sẽ tự động bắt đầu tải xuống tệp video gốc chất lượng cao</li>
+		<li>Tệp mặc định được lưu vào <strong>thư mục "Downloads"</strong> của thiết bị</li>
+		</ul>
+		<p><strong>📌 Gợi ý sử dụng:</strong></p>
+		<ul>
+		<li>Tải xuống tệp lớn bị gián đoạn? → Sử dụng trình quản lý tải xuống (như IDM, Free Download Manager)</li>
+		<li>Cần trích xuất âm thanh? → Tải MP4 xuống rồi chuyển đổi sang MP3 bằng công cụ trực tuyến</li>
+		<li>Lưu trữ tài liệu quan trọng? → Đề xuất sao lưu đồng thời siêu dữ liệu (tiêu đề, liên kết nguồn)</li>
+		</ul>
+		<p><strong>⚠️ Lưu ý:</strong> Liên kết video trực tiếp Telegram thường có hiệu lực trong 1~2 giờ, vui lòng hoàn tất việc tải xuống kịp thời.</p>
+		</div>
+		</div>
+		</section>
+
+		<section>
+		<h2>⚙️ Giải thích nguyên lý kỹ thuật</h2>
+		<ul>
+		<li>Công cụ này phân tích cấu trúc DOM của tin nhắn công khai trên phiên bản web Telegram, trích xuất liên kết video trực tiếp (thuộc tính <code>src</code> trong thẻ <code>&lt;video&gt;</code>).</li>
+		<li>Đối với phiên bản Telegram mới hơn, sử dụng cấu hình JSON của trang <code>t.me</code> chính thức để trích xuất URL phương tiện, <strong>không phụ thuộc vào bất kỳ API của bên thứ ba nào</strong>.</li>
+		<li>Video được cung cấp ở định dạng MP4 gốc, giữ nguyên độ phân giải và tỷ lệ bitrate đầy đủ khi tải lên, <strong>không nén, không watermark</strong>.</li>
+		<li><strong>Tất cả xử lý được thực hiện ở phía trình duyệt</strong>: JavaScript lấy trực tiếp URL video và kích hoạt tải xuống, không thông qua bất kỳ máy chủ trung gian nào.</li>
+		<li>Đối với nội dung được bảo vệ (video đặt "cấm chuyển tiếp"), Telegram sẽ mã hóa luồng phương tiện, loại nội dung này không thể tải xuống bằng công cụ này.</li>
+		</ul>
+		<p><strong>Giải thích giới hạn kỹ thuật:</strong> Vì Telegram không cung cấp API tải xuống chính thức và thường xuyên cập nhật cấu trúc trang web, công cụ này có thể tạm thời ngừng hoạt động sau khi phiên bản web Telegram được cải tiến. Chúng tôi cam kết cập nhật kịp thời để duy trì khả năng tương thích.</p>
+		</section>
+		
+		<section>
+		<h2>⚠️ Chính sách quyền riêng tư & Tuyên bố pháp lý</h2>
+		<ol>
+		<li><strong>Bảo vệ quyền riêng tư:</strong> Công cụ này không thu thập, không lưu trữ bất kỳ dữ liệu người dùng nào. Tất cả phân tích liên kết được thực hiện cục bộ trên trình duyệt, không gửi đến máy chủ.</li>
+		<li><strong>Chỉ giới hạn nội dung công khai:</strong> Nghiêm cấm thử tải xuống cuộc trò chuyện riêng tư, kênh trả phí hoặc nội dung chưa được ủy quyền. Chúng tôi không cung cấp phương pháp bỏ qua cơ chế bảo vệ của Telegram.</li>
+		<li><strong>Tuân thủ bản quyền:</strong> Nội dung tải xuống chỉ dành cho mục đích sử dụng cá nhân. Cấm tải lên lại, phân phối thương mại hoặc xâm phạm quyền của người sáng tạo. Tôn trọng <a href="https://core.telegram.org/api/terms" target="_blank">Điều khoản dịch vụ Telegram</a>.</li>
+		<li><strong>Điều khoản miễn trừ trách nhiệm:</strong> Người dùng cần tự đánh giá tính hợp pháp của hành vi tải xuống. Chúng tôi không chịu trách nhiệm về việc khóa tài khoản, tranh chấp pháp lý do lạm dụng công cụ này gây ra.</li>
+		<li><strong>Không bảo đảm:</strong> Công cụ này được cung cấp "nguyên trạng", không đảm bảo 100% tương thích với tất cả video Telegram, không chịu trách nhiệm về mất mát dữ liệu.</li>
+		</ol>
+		</section>
+
+		<section>
+		<h2>❓ Câu hỏi thường gặp (FAQ)</h2>
+		<div class="faq-list">
+		<div class="faq-item">
+		<strong>Q: Tại sao thông báo "Không thể phân tích liên kết"?</strong><br>
+		Nguyên nhân có thể:<br>
+		• Liên kết không phải nội dung kênh/ nhóm công khai (ví dụ: liên kết trò chuyện riêng tư)<br>
+		• Kênh đã đặt cài đặt bảo vệ quyền riêng tư<br>
+		• Cấu trúc phiên bản web Telegram được cập nhật (chúng tôi sẽ sửa chữa càng sớm càng tốt)<br>
+		• Định dạng liên kết sai (nên bắt đầu bằng <code>t.me/</code>)
+		</div>
+		<div class="faq-item">
+		<strong>Q: Có thể tải video từ nhóm được mã hóa hoặc trò chuyện riêng tư không?</strong><br>
+		<strong>Không thể.</strong> Công cụ này tuân thủ nghiêm ngặt chính sách bảo mật của Telegram, chỉ hỗ trợ nội dung hoàn toàn công khai, có thể truy cập mà không cần đăng nhập. Nội dung riêng tư cần truy cập bằng ứng dụng chính thức của Telegram.
+		</div>
+		<div class="faq-item">
+		<strong>Q: Video tải xuống có watermark hoặc chất lượng bị giảm không?</strong><br>
+		Không. Chúng tôi cung cấp tệp video gốc trên máy chủ Telegram, chất lượng hoàn toàn giống với khi xem trong Ứng dụng Telegram, không chứa bất kỳ watermark bổ sung nào.
+		</div>
+		<div class="faq-item">
+		<strong>Q: Tại sao sau khi tải xuống trên thiết bị iOS không tìm thấy tệp?</strong><br>
+		Hạn chế của iOS: Tệp tải xuống trong Safari được lưu vào Ứng dụng "Files" → "iCloud Drive" → "Downloads". Đề xuất cài đặt Ứng dụng "Files" để quản lý nội dung tải xuống.
+		</div>
+		<div class="faq-item">
+		<strong>Q: Có hỗ trợ tải tài liệu hoặc tệp âm thanh từ kênh Telegram không?</strong><br>
+		Phiên bản hiện tại chỉ hỗ trợ tải video. Chúng tôi đang phát triển hỗ trợ đa định dạng (PDF, MP3, ZIP, v.v.), vui lòng chờ đợi các bản cập nhật tiếp theo!
+		</div>
+		<div class="faq-item">
+		<strong>Q: Công cụ này có an toàn không? Nó có đánh cắp tài khoản Telegram của tôi không?</strong><br>
+		Hoàn toàn an toàn. Công cụ này <strong>không yêu cầu, không thu thập</strong> bất kỳ thông tin tài khoản Telegram nào (số điện thoại, phiên, danh bạ). Nó chỉ xử lý liên kết phương tiện từ trang web công khai, hoàn toàn tách biệt với tài khoản Telegram của bạn.
+		</div>
+		</div>
+		</section>
+
+		<footer>
+		<p>Gặp vấn đề hoặc có đề xuất cải tiến? Chúng tôi coi trọng phản hồi của bạn!<br>
+		📧 Email: <a href="{{mailtocontactmail}}">{{contactmail}}</a><br>
+		💬 GitHub Issues: <a href="{{githublink}}" target="_blank">{{githublink}}</a></p>
+		<p style="margin-top: 1.2rem; font-style: italic; color: #666;">
+		Cảm ơn bạn đã sử dụng <strong>Công cụ Tải video Telegram</strong> ——<br>
+		Tập trung vào quyền riêng tư, tôn trọng quy tắc, để nội dung công khai tự do lưu thông. 🕊️
+		</p>
+		<p style="margin-top: 0.8rem; font-size: 0.85rem; color: #999;">
+		Công cụ này không liên kết chính thức nào với Telegram FZ-LLC. Telegram là nhãn hiệu đã đăng ký của Telegram FZ-LLC.
+		</p>
+		</footer>
+
+	<footer class="footer">
+			<p>© {{year_string}} Công cụ Tải video Telegram. Đã đăng ký bản quyền.</p>
+			<p>Trang web này không liên kết chính thức với Telegram, Inc. | 
+			<a href="/privacy-policy" style="color: #00c6ff;">Chính sách quyền riêng tư</a> | 
+			<a href="/terms-of-service" style="color: #00c6ff;">Điều khoản dịch vụ</a> | 
+			<a href="/about-us" style="color: #00c6ff;">Về chúng tôi</a>| 
+			<a href="/contact-us" style="color: #00c6ff;">Liên hệ chúng tôi</a>
+			</p>
+			<p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">
+				Công cụ này chỉ dành cho mục đích học tập và nghiên cứu cá nhân, người dùng tự chịu mọi trách nhiệm pháp lý
+			</p>
+			<p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">
+				Tải xuống nội dung được bảo vệ bản quyền có thể vi phạm luật pháp liên quan, vui lòng tuân thủ luật pháp địa phương
+			</p>
+	</footer>
+
+
+	</div>
+
+	</div>
+	<div class="col-sm-2 d-none d-md-block">
+	</div>
+</div>
+</div>
+<script src="/static/jquery.min.js"  crossorigin="anonymous"></script>
+<script src="/static/popper.min.js"  crossorigin="anonymous"></script>
+
+<script data-ad-client="ca-pub-3339068484857413" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script type="text/javascript" src="/static/jquery.lazy.min.js"></script>
+
+<script type="text/javascript" src="/static/shareon.iife.js" defer  init></script>
+<script>
+	$(function() {
+		$('.lazy').Lazy();
+	});
+</script>
+<script type="application/ld+json">
+	{
+	"@context": "http://schema.org/",
+	"@type": "Organization",
+	"url": "https://twittervideodownloaderx.com",
+	"logo": "https://twittervideodownloaderx.com/static/logo.png"
+	}
+</script>
+
+<script>
+function mp3turn(obj){
+	var inputvalue =obj.getAttribute('va');
+	//alert(inputvalue);
+	if (inputvalue==='')
+	{
+		alert('456');
+		return false;
+	}
+	$('#mp3placeholder').empty();
+	var spinner='<span style="font-size:1.5em"><span class="spinner-loader" ></span>';
+	$('#mp3placeholder').append(spinner+'<br />Converting Video to Mp3</span>');
+	var xhr = new XMLHttpRequest();
+	var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+	xhr.open('post', '/getmp3', true);
+	xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	xhr.send('inputvalue='+inputvalue);
+	xhr.onreadystatechange = processresponse;
+	function processresponse() {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			// Everything is good, the response was received.
+		if (xhr.status === 200) {
+			// Perfect!
+			var rstring=xhr.responseText;
+			//alert(xhr.responseText);
+			var response = JSON.parse(rstring);
+			var statue=response.statue;
+			if (statue=='NO'){
+				$('#mp3placeholder').html('NO result');
+				return;
+				}
+			var mp3filepath=response.mp3filepath;
+			//alert(htimage);
+			$('#mp3placeholder').empty();
+			var intext='';
+			var intext='<a href="/'+mp3filepath+'" target="_blank" class="btn btn-danger">Download Video Mp3</a>';
+			$('#mp3placeholder').html(intext);
+			}
+		else{
+			$('#mp3placeholder').html('<p style="font-size:1.5em">NO result</p>');
+		}
+		}
+	}
+};
+function gifturn(obj){
+	var inputvalue =obj.getAttribute('va');
+	//alert(inputvalue);
+	if (inputvalue==='')
+	{
+		alert('456');
+		return false;
+	}
+	$('#gifplaceholder').empty();
+	var spinner='<span style="font-size:1.5em"><span class="spinner-loader" ></span>';
+	$('#gifplaceholder').append(spinner+'<br />Converting Video to Gif</span>');
+	var xhr = new XMLHttpRequest();
+	var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+	xhr.open('post', '/getgif', true);
+	xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	xhr.send('inputvalue='+inputvalue);
+	xhr.onreadystatechange = processresponse;
+	function processresponse() {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			// Everything is good, the response was received.
+		if (xhr.status === 200) {
+			// Perfect!
+			var rstring=xhr.responseText;
+			//alert(xhr.responseText);
+			var response = JSON.parse(rstring);
+			var statue=response.statue;
+			if (statue=='NO'){
+				$('#gifplaceholder').html('NO result');
+				return;
+				}
+			var giffilepath=response.giffilepath;
+			//alert(htimage);
+			$('#gifplaceholder').empty();
+			var intext='';
+			var intext='<a href="/'+giffilepath+'" target="_blank" class="btn btn-danger">Download Video GIF</a>';
+			$('#gifplaceholder').html(intext);
+			}
+		else{
+			$('#gifplaceholder').html('<p style="font-size:1.5em">NO result</p>');
+		}
+		}
+	}
+};
+$(document).ready(function() {
+$("#mainsource").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $("#bigbutton").click();
+    }
+});
+$('#bigbutton').on('click',function(){
+	var inputvalue = $('#mainsource').val();
+	if (inputvalue==='')
+	{
+		return false;
+	}
+	$('#hashshow').empty();
+	var spinner='<div style="text-align:center;"><span style="font-size:1.5em;"><span style="background-color:#007FFF;" class="spinner-loader" ></span>';
+	$('#hashshow').append(spinner+'<br />Đang tải video</span></div>');
+	
+	//document.getElementById("loader").style.display = "block";
+
+	var xhr = new XMLHttpRequest();
+	var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+	xhr.open('post', '/getitem_telegram', true);
+	xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	xhr.send('inputvalue='+inputvalue);
+	xhr.onreadystatechange = processresponse;
+	function processresponse() {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			// Everything is good, the response was received.
+		if (xhr.status === 200) {
+			// Perfect!
+			document.getElementById("loader").style.display = "none";
+			var rstring=xhr.responseText;
+			//alert(xhr.responseText);
+			var response = JSON.parse(rstring);
+			var statue=response.statue;
+			if (statue=='NO'){
+				$('#hashshow').html('NO result');
+				return;
+				}
+				
+				
+				
+				var v_thumbnail=encodeURI(response.v_thumbnail);//
+				
+				var v_title=response.v_title;//
+				var v_webpage_url=encodeURI(response.v_webpage_url);//
+				var v_duration_string=response.v_duration_string;//
+				//var v_uploader=response.v_uploader;
+				//var v_uploader_url=response.v_uploader_url;
+				var v_upload_date=response.v_upload_date;//
+				//var v_view_count=response.v_view_count;
+				//var v_like_count=response.v_like_count;
+				//var v_comment_count=response.v_comment_count;
+				var v_ext=response.v_ext;//
+				//var v_width=response.v_width;
+				//var v_height=response.v_height;
+				var v_resolution=response.v_resolution;//
+				var v_aspect_ratio=response.v_aspect_ratio;//
+				
+				var v_des=response.v_des;//
+
+				var v_formats = response.formatslist;
+				//var v_thumbnails = response.thumbnailslist;
+			
+
+			$('#hashshow').empty();
+			var intext='';
+			var intext=intext+'<div class="row" ><div class="col-sm-6" ><div><b>'+v_title+'</b></div><div><img src="'+v_thumbnail+'"  class="img-fluid" /></div>';
+			
+
+			var intext=intext+'</div><div class="col-sm-6 align-self-end" ><br /><br />';
+			
+			for (let i = 0; i < v_formats.length; i++) {
+			
+				turl=encodeURI(v_formats[i][0]);
+				tres=v_formats[i][1];
+				var intext=intext+'<div><i class="bi bi-cloud-download"></i> <a style="text-decoration:none" href="'+turl+'">Tải video (độ phân giải '+tres+')</a></div>';
+			}
+			
+			//var intext=intext+'<br />'
+			//for (let i = 0; i < v_thumbnails.length; i++) {
+			
+			//	turl=v_thumbnails[i][0];
+			//	tres=v_thumbnails[i][1];
+			//	var intext=intext+'<div><i class="bi bi-file-image"></i> <a style="text-decoration:none" href="'+turl+'">Tải hình thu nhỏ (độ phân giải '+tres+')</a></div>';
+			//}
+			
+			var intext=intext+'</div></div><hr />';
+	
+			var intext=intext+'<div class="row" ><div class="col-sm-6" ><div><b>Tiêu đề: </b>'+v_title+'</div><div><b>Liên kết web: </b>'+v_webpage_url+'</div><div><b>Thời lượng: </b>'+v_duration_string+'</div><div><b>Ngày tải lên: </b>'+v_upload_date+'</div></div>';
+	
+			var intext=intext+'<div class="col-sm-6" ><div><b>Định dạng tệp: </b>'+v_ext+'</div><div><b>Độ phân giải: </b>'+v_resolution+'</div><div><b>Tỷ lệ khung hình: </b>'+v_aspect_ratio+'</div></div></div>';
+
+			var intext=intext+'<div class="row" ><div class="col-sm-12" ><div><b>Mô tả video: </b>'+v_des+'</div></div></div>';
+
+
+			var intext=intext+'<div class="row" >'+'<div class="shareon shadow bg-light bg-gradient"><a class="facebook" data-title="'+v_title+'" ><span  style="font-size:1em">facebook</span></a><a class="linkedin" data-title="'+v_title+'" ><span style="font-size:1em">linkedin</span></a>	<a class="mastodon" data-title="'+v_title+'"><span  style="font-size:1em">mastodon</span></a><a class="messenger" data-fb-app-id="0123456789012345" data-title="'+v_title+'"><span  style="font-size:1em">messenger</span></a><a class="pinterest" data-title="'+v_title+'"><span  style="font-size:1em“>pinterest</span></a><a class="reddit" data-title="'+v_title+'"><span  style="font-size:0.5em">reddit</span></a><a class="telegram" data-title="'+v_title+'"><span  style="font-size:1em">telegram</span></a><a class="twitter" data-title="'+v_title+'"><span  style="font-size:1em“>twitter</span></a><a class="viber" data-title="'+v_title+'"><span  style="font-size:1em">viber</span></a><a class="vkontakte" data-title="'+v_title+'"><span  style="font-size:1em">vkontakte</span></a><a class="whatsapp" data-title="'+v_title+'"><span  style="font-size:1em">whatsapp</span></a></div>';
+			
+			
+			var intext=intext+'</div>';
+			
+			//$('#hashshow').append('<div>'+'<img src="'+htsimage+'" />'+'</div>'+'<p>'+trunttext+'</p>');
+			$('#hashshow').html(intext);
+			}
+		else{
+			document.getElementById("loader").style.display = "none";
+			$('#hashshow').html('<p style="font-size:1.5em">NO result</p>');
+		}
+		}
+	}
+});
+});
+</script>
+<script>
+$(document).ready(function() {
+  $('.droplang').click(function(e) {
+    e.preventDefault();
+    var selectedValue = $(this).data('value');
+	var domainname='https://twittervideodownloaderx.com';
+	if (selectedValue==='en')
+	{
+		window.location=domainname+'/{{baseurlstring}}';
+	}
+	else
+	{
+	window.location=domainname+'/{{baseurlstring}}_'+selectedValue;
+	}
+  });
+});
+</script>
+
+
+<script>
+$(document).ready(function() {
+  $('.droptool').click(function(e) {
+    e.preventDefault();
+    var selectedtoolValue = $(this).data('value');
+	var domainname='https://twittervideodownloaderx.com';
+	var current_lang='{{lang}}';
+	
+	if (selectedtoolValue==='x_twitter')
+	{
+		if (current_lang==='en')
+			{
+			window.location=domainname;
+			}
+		else
+			{
+			window.location=domainname+'/'+current_lang;
+			}
+	}
+	else
+	{
+		if (current_lang==='en')
+		
+			{
+			window.location=domainname+'/'+selectedtoolValue+'_downloader';
+			}
+		else
+			{
+			window.location=domainname+'/'+selectedtoolValue+'_downloader_'+'{{lang}}';
+			}
+	}
+  });
+});
+</script>
+<script type="text/javascript">
+var sc_project=11698515; 
+var sc_invisible=1; 
+var sc_security="38970939"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+
+<link  rel="stylesheet" href='/static/wait.css' >
+</body>
+</html>

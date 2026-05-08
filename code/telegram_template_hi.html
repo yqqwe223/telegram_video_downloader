@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta name="msvalidate.01" content="5CCC6EE8FF816477D80A4DE459A738F1" />
+{% load static %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="टेलीग्राम वीडियो डाउनलोडर: हमारे टेलीग्राम वीडियो डाउनलोडर से कोई भी वीडियो या GIF डाउनलोड करें और उसे MP3 या GIF फॉर्मेट में बदलें। किस बात की प्रतीक्षा? अभी आज़माएं!">
+<meta name="keywords" content="टेलीग्राम वीडियो डाउनलोडर">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@twittervideodownloaderx.com">
+<meta name="twitter:title" content="टेलीग्राम वीडियो डाउनलोडर – टेलीग्राम से वीडियो और GIF प्राप्त करें">
+<meta name="twitter:description" content="टेलीग्राम वीडियो डाउनलोडर: हमारे टेलीग्राम वीडियो डाउनलोडर से कोई भी वीडियो या GIF डाउनलोड करें और उसे MP3 या GIF फॉर्मेट में बदलें। किस बात की प्रतीक्षा? अभी आज़माएं!">
+<meta name="twitter:image" content="https://twittervideodownloaderx.com/static/logo.png  ">
+<meta name="twitter:image:alt" content="टेलीग्राम वीडियो डाउनलोडर – टेलीग्राम से वीडियो और GIF प्राप्त करें">
+
+<meta property="og:title" content="टेलीग्राम वीडियो डाउनलोडर – टेलीग्राम से वीडियो और GIF प्राप्त करें" />
+<meta property="og:description" content="टेलीग्राम वीडियो डाउनलोडर: हमारे टेलीग्राम वीडियो डाउनलोडर से कोई भी वीडियो या GIF डाउनलोड करें और उसे MP3 या GIF फॉर्मेट में बदलें। किस बात की प्रतीक्षा? अभी आज़माएं!" />
+<meta property="og:image" content="https://twittervideodownloaderx.com/static/logo.png  " />
+<meta property="og:image:alt" content="टेलीग्राम वीडियो डाउनलोडर – टेलीग्राम से वीडियो और GIF प्राप्त करें" />
+
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css    ">
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css    " />
+<link href="https://gcore.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css  " rel="stylesheet">
+<script src="https://gcore.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js  "></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css  " rel="stylesheet">
+
+<link rel="stylesheet" href="/static/wait.css" >
+<link rel="stylesheet" href="/static/shareon.min.css" >
+<link rel="preconnect" href="https://fonts.googleapis.com  ">
+<link rel="preconnect" href="https://fonts.gstatic.com  " crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+
+{{websiteSchema|safe}}
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<link rel="icon" href="{% static 'favicon.ico' %}">
+<title>टेलीग्राम वीडियो डाउनलोडर – टेलीग्राम से वीडियो और GIF प्राप्त करें</title>
+</head>
+<body>
+
+		<style>
+		/* ================== ग्लोबल वेरिएबल्स और रीसेट ================== */
+		:root {
+		--tg-blue:      #0088CC;
+		--tg-blue-dark: #006BA3;
+		--tg-blue-light:#54A7E8;
+		--tg-gray:      #F5F5F5;
+		
+		
+		--bg-light: #fafafa;
+		--text-dark: #212121;
+		--text-light: #5f6368;
+		--card-bg: #ffffff;
+		--border-color: #e0e0e0;
+		--shadow: 0 2px 10px rgba(0,0,0,0.08);
+		--radius: 12px;
+		}
+		
+		
+		* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		}
+		
+		body {
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+		line-height: 1.65;
+		color: var(--text-dark);
+		background-color: var(--bg-light);
+		padding: 5px;
+		}
+		
+		.container {
+		max-width: 960px;
+		margin: 0 auto;
+		}
+		
+		/* ================== सामान्य स्टाइल ================== */
+		a {
+		color: var(--tg-blue);
+		text-decoration: none;
+		}
+		a:hover {
+		text-decoration: underline;
+		}
+
+		code {
+		background-color: #f1f1f1;
+		padding: 2px 6px;
+		border-radius: 4px;
+		font-family: monospace;
+		font-size: 0.94em;
+		color: var(--tg-blue);
+		}
+		
+		h1, h2, h3, h4 {
+		font-weight: 800;
+		line-height: 1.3;
+		margin-bottom: 1rem;
+		}
+		
+		h1 {
+		font-size: 2.3rem;
+		color: var(--tg-blue);
+		text-align: center;
+		}
+		
+		.subtitle {
+		font-size: 1.2rem;
+		color: var(--text-light);
+		text-align: center;
+		max-width: 700px;
+		margin: 0 auto 1.5rem;
+		line-height: 1.6;
+		}
+
+		.notice-box {
+		background: #f0f9ff;
+		border-left: 4px solid var(--tg-blue);
+		padding: 1.2rem;
+		margin: 1.5rem auto 2rem;
+		border-radius: 8px;
+		font-size: 0.98rem;
+		max-width: 800px;
+		}
+		
+		h2 {
+		font-size: 1.75rem;
+		margin-top: 2.5rem;
+		padding-bottom: 0.6rem;
+		border-bottom: 2px solid var(--border-color);
+		}
+		
+		h3 {
+		font-size: 1.35rem;
+		color: #333;
+		}
+		
+		h4 {
+		font-size: 1.15rem;
+		color: var(--tg-blue);
+		margin: 1.4rem 0 0.8rem;
+		}
+		
+		p {
+		margin-bottom: 1rem;
+		}
+
+		ul, ol {
+		padding-left: 1.5rem;
+		margin: 1rem 0;
+		}
+		
+		li {
+		margin-bottom: 0.6rem;
+		}
+		
+		/* ================== लेआउट कंपोनेंट्स ================== */
+		.feature-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.5rem;
+		margin: 1.5rem 0;
+		}
+		
+		.feature-card {
+		background: var(--card-bg);
+		padding: 1.4rem;
+		border-radius: var(--radius);
+		box-shadow: var(--shadow);
+		border: 1px solid #eee;
+		}
+
+		.step-container {
+		display: flex;
+		flex-direction: column;
+		gap: 1.4rem;
+		margin: 1.5rem 0;
+		}
+		
+		.step-card {
+		background: var(--card-bg);
+		padding: 1.6rem;
+		border-radius: var(--radius);
+		box-shadow: var(--shadow);
+		border: 1px solid #eee;
+		}
+		
+		.faq-list {
+		display: flex;
+		flex-direction: column;
+		gap: 1.2rem;
+		}
+		
+		.faq-item {
+		background: var(--card-bg);
+		padding: 1.3rem;
+		border-radius: var(--radius);
+		box-shadow: var(--shadow);
+		border: 1px solid #eee;
+		}
+
+		footer {
+		text-align: center;
+		padding: 2rem 0 1rem;
+		color: var(--text-light);
+		font-size: 0.95rem;
+		border-top: 1px solid var(--border-color);
+		margin-top: 2rem;
+		}
+		
+        .footer {
+            background: #212529;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: #00c6ff;
+            text-decoration: none;
+        }
+		
+		
+		/* ================== रेस्पॉन्सिव ब्रेकपॉइंट्स ================== */
+		@media (min-width: 768px) {
+		body {
+		padding: 5px;
+		}
+		h1 {
+		font-size: 2.7rem;
+		}
+		.subtitle {
+		font-size: 1.35rem;
+		}
+		h2 {
+		font-size: 2rem;
+		}
+		}
+
+		@media (min-width: 1024px) {
+		body {
+		padding: 5px;
+		}
+		.feature-grid {
+		grid-template-columns: repeat(2, 1fr);
+		}
+		}
+		
+		@media (max-width: 480px) {
+		h1 {
+		font-size: 1.9rem;
+		}
+		.subtitle {
+		font-size: 1.1rem;
+		padding: 0 8px;
+		}
+		.notice-box {
+		padding: 1rem;
+		font-size: 0.9rem;
+		}
+		.step-card, .feature-card, .faq-item {
+		padding: 1.2rem;
+		}
+		}
+		
+
+		
+		</style>
+
+
+<div class="container-fluid  text-break">
+<div class="row" style="background:linear-gradient(135deg, var(--tg-blue) 0%, var(--tg-blue-light) 50%, var(--tg-gray) 100%);">
+<div class="row" >
+    <div class="col-sm-2 d-none d-sm-block" >
+    </div>
+	<div class="col-sm-4 align-self-end"  >
+		<a href='https://twittervideodownloaderx.com' style="text-decoration:none"><img  data-src='/static/logo.png' src='/static/pix.jpg' class="img-fluid lazy align-text-bottom" alt='साइट लोगो'><span  class='align-text-bottom text-wrap fs-3' style="font-style:italic;color:white;font-family:'Tektur',sans-serif;">Twittervideodownloaderx</span></a>
+    </div>
+	
+	<div class="col-sm-4 d-flex justify-content-end align-items-center" id="webdes">
+			<ul  style='padding-top:25px;color:white'  class="nav nav-tabs" >
+				<li style='display:inline;'><a href='https://twittervideodownloaderx.com' style='text-decoration: none;color:white'>होम</a>&nbsp;&nbsp;</li>
+	
+				<div class="text-end mb-3">
+					<div class="dropdown d-inline-block">
+						<button class="btn btn-sm btn-outline-light d-flex align-items-center gap-1"
+								type="button"
+								id="langDropdown"
+								data-bs-toggle="dropdown"
+								aria-expanded="false">
+						<i class="fa-solid fa-video"></i>
+						<span>वीडियो डाउनलोड टूल्स</span>
+						</button>
+				
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+							{{toollistele|safe}}
+						</ul>
+					</div>&nbsp;&nbsp;
+				</div>
+				
+				<div class="text-end mb-3">
+					<div class="dropdown d-inline-block">
+						<button class="btn btn-sm btn-outline-light d-flex align-items-center gap-1"
+								type="button"
+								id="langDropdown"
+								data-bs-toggle="dropdown"
+								aria-expanded="false">
+						<i class="bi bi-globe"></i>
+						<span>🇮🇳 हिन्दी</span>
+						</button>
+				
+						<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+							{{langlistele|safe}}
+						</ul>
+					</div>
+				</div>
+			</ul>
+		</div>
+	<div class="col-sm-2" id='langweb' >
+	</div>
+</div>
+<div class="row" >
+    <div class="col-md-2 d-none d-md-block">
+    </div> 
+    <div class="col-md-8"  style="border-width:1px;border-style: solid;background-color:#F5F7FA">
+	
+	
+		<br />
+		<div id='titleweb'  style='text-align:center;color:#2D3E50' >
+			<h1 style='font-family: "Tektur",sans-serif;'>✈️ टेलीग्राम वीडियो डाउनलोडर</h1>
+			<p class="subtitle">टेलीग्राम पब्लिक चैनल/ग्रुप से वीडियो मुफ्त ऑनलाइन डाउनलोड करें · ओरिजिनल HD MP4 · लॉगिन की जरूरत नहीं · प्राइवेसी सुरक्षित</p>
+		</div> 
+		<div id='ad' >
+		</div>
+		<div style='text-align:center'>
+		
+		<input type='text' id='mainsource' style='width:80%;display:inline;color:#2D3E50' placeholder="टेलीग्राम लिंक पेस्ट करें" >
+		</div>
+		<div style='text-align:center;color:#2D3E50'>
+		उदाहरण यूआरएल : https://t.me/durov/375?single
+		</div>
+		<br/>
+		<div style='text-align:center'>
+		<button type="button" class="btn" id='bigbutton' style='background-color:#FF6B35;color:white'><i class="bi bi-download"></i> वीडियो डाउनलोड करें</button>
+		</div>
+		<br/>
+		
+		<div class="spinner-grow text-primary text-center" role="status" style='display:none;font-size:3em' id='loader'>
+			<span class="visually-hidden">डाउनलोड हो रहा है...</span>
+		</div>
+		
+		<div class=""  id='hashshow' style='color:#2D3E50'>
+		</div> 
+		<br />
+		
+		
+	</div>
+	<div class="col-md-2 d-none d-md-block">
+	</div>
+</div>
+<div class="row" >
+	<p>&nbsp;<span>{% csrf_token %}</span></p>
+</div>
+</div>
+
+<div class="row" style='margin-top:3em;background-color:#F5FAFB'>
+	<div class="col-sm-2 d-none d-md-block">
+	</div> 
+	<div class="col-sm-8"  >
+
+	<div class="container">
+	
+		<div class="notice-box">
+		🔒 <strong>महत्वपूर्ण सूचना:</strong> यह टूल <strong>केवल पब्लिक चैनल/ग्रुप कॉन्टेंट</strong> के लिए है, <strong>प्राइवेट चैट, सीक्रेट ग्रुप या प्रोटेक्टेड कॉन्टेंट</strong> एक्सेस नहीं कर सकता। हम कोई वीडियो स्टोर नहीं करते, टेलीग्राम API परमिशन नहीं मांगते, सभी प्रोसेसिंग लोकल होती है। कृपया टेलीग्राम सेवा नियमों का पालन करें, कंटेंट क्रिएटर्स के अधिकारों का सम्मान करें।
+		</div>
+
+
+		<section>
+		<h2>✨ कोर फीचर्स और सीमाएं</h2>
+		<div class="feature-grid">
+		<div class="feature-card">
+		<h4>🎥 पब्लिक चैनल वीडियो डाउनलोड</h4>
+		<p>टेलीग्राम पब्लिक चैनल/ग्रुप के वेब वर्जन (t.me/चैनलनाम/मैसेजID) से वीडियो डाउनलोड करें, ओरिजिनल क्वालिटी में (1080P तक)।</p>
+		</div>
+		<div class="feature-card">
+		<h4>⚡ अकाउंट की जरूरत नहीं</h4>
+		<p>टेलीग्राम मोबाइल नंबर, API कुंजी या लॉगिन क्रेडेंशियल्स की जरूरत नहीं, पूरी तरह अनामित उपयोग, आपकी अकाउंट सुरक्षा बनी रहेगी।</p>
+		</div>
+		<div class="feature-card">
+		<h4>🛡️ प्राइवेसी प्राथमिकता</h4>
+		<p>सभी पार्सिंग क्लाइंट साइड होती है, वीडियो डायरेक्ट लिंक हमारे सर्वर से नहीं गुजरते, IP या डाउनलोड हिस्ट्री रिकॉर्ड नहीं करते।</p>
+		</div>
+		<div class="feature-card">
+		<h4>📱 सभी प्लेटफॉर्म समर्थित</h4>
+		<p>iOS, Android, Windows, macOS के लिए अनुकूलित, मुख्य ब्राउज़र (Chrome, Safari, Firefox) में काम करता है।</p>
+		</div>
+		</div>
+		<p><strong>✅ समर्थित:</strong> पब्लिक चैनल/ग्रुप के वेब वर्जन वीडियो (t.me लिंक), अनप्रोटेक्टेड कंटेंट<br>
+		<strong>❌ असमर्थित:</strong> प्राइवेट चैट कंटेंट, सीक्रेट ग्रुप, प्रोटेक्टेड कंटेंट ("फॉरवर्डिंग रोकें"), टेलीग्राम प्रीमियम एक्सक्लूसिव कंटेंट, GIF से वीडियो कन्वर्जन</p>
+		<p><strong>⚠️ महत्वपूर्ण सीमा:</strong> टेलीग्राम स्टैंडर्ड पब्लिक वीडियो लिंक प्रदान नहीं करता, यह टूल <strong>सीधे टेलीग्राम ऐप से डाउनलोड नहीं कर सकता</strong>। पब्लिक चैनल/ग्रुप का <strong>वेब वर्जन लिंक</strong> (फॉर्मेट जैसे <code>https://t.me/ChannelName/123</code>) जरूरी है।</p>
+		</section>
+
+		<section>
+		<h2>📥 विस्तृत उपयोग गाइड (तीन आसान स्टेप्स)</h2>
+		<div class="step-container">
+		<div class="step-card">
+		<h4>चरण 1: टेलीग्राम पब्लिक चैनल वीडियो लिंक प्राप्त करें</h4>
+		<p><strong>विधि A: टेलीग्राम ऐप के माध्यम से (सुझाया गया)</strong></p>
+		<ol>
+		<li>टेलीग्राम ऐप खोलें, उस <strong>पब्लिक चैनल या ग्रुप</strong> में जाएं जहां से वीडियो डाउनलोड करना चाहते हैं</li>
+		<li>टारगेट वीडियो मैसेज को <strong>लॉन्ग प्रेस</strong> करें → नीचे दाईं ओर <strong>⋮ (अधिक)</strong> पर क्लिक करें → <strong>"लिंक कॉपी करें"</strong> चुनें</li>
+		<li>लिंक फॉर्मेट होगा:<br>
+		<code>https://t.me/ChannelName/123</code><br>
+		या<br>
+		<code>https://t.me/c/123456789/123</code>
+		</li>
+		</ol>
+		<p><strong>विधि B: टेलीग्राम वेब वर्जन के माध्यम से</strong></p>
+		<ol>
+		<li>ब्राउज़र में <a href="https://web.telegram.org" target="_blank">web.telegram.org</a> खोलें</li>
+		<li>अपने टेलीग्राम अकाउंट में लॉगिन करें, पब्लिक चैनल ढूंढें</li>
+		<li>वीडियो मैसेज के टाइमस्टैम्प पर <strong>राइट-क्लिक</strong> करें → <strong>"लिंक पता कॉपी करें"</strong> चुनें</li>
+		</ol>
+		<p><strong>💡 महत्वपूर्ण सुझाव:</strong> सुनिश्चित करें कि चैनल/ग्रुप <strong>पब्लिक</strong> स्थिति में हो (बिना ज्वाइन किए देख सकते हैं)। प्राइवेट कंटेंट डाउनलोड नहीं हो सकता।</p>
+		</div>
+
+		<div class="step-card">
+		<h4>चरण 2: लिंक पेस्ट करें और पार्स करें</h4>
+		<ol>
+		<li>इस डाउनलोडर पेज पर वापस आएं</li>
+		<li>कॉपी किया गया t.me लिंक ऊपर इनपुट बॉक्स में पेस्ट करें</li>
+		<li><strong>【वीडियो पार्स करें】</strong> बटन पर क्लिक करें</li>
+		</ol>
+		<p>सिस्टम अपने आप:<br>
+		• यह सत्यापित करेगा कि लिंक पब्लिक कंटेंट की ओर इशारा करता है या नहीं<br>
+		• वीडियो मेटाडेटा निकालेगा (शीर्षक, अवधि, थंबनेल)<br>
+		• डायरेक्ट डाउनलोड लिंक जनरेट करेगा (MP4 फॉर्मेट)<br>
+		⏳ पार्सिंग प्रक्रिया में आम तौर पर 3~8 सेकंड लगते हैं, वीडियो साइज पर निर्भर करता है</p>
+		</div>
+		
+		<div class="step-card">
+		<h4>चरण 3: HD वीडियो डाउनलोड करें</h4>
+		<ul>
+		<li>पार्सिंग सफल होने पर, <strong>【MP4 डाउनलोड करें】</strong> बटन पर क्लिक करें</li>
+		<li>ब्राउज़र ओरिजिनल HD वीडियो फाइल डाउनलोड करना शुरू कर देगा</li>
+		<li>फाइल डिफ़ॉल्ट रूप से डिवाइस के <strong>"डाउनलोड" फोल्डर</strong> में सेव होगी</li>
+		</ul>
+		<p><strong>📌 उपयोग सुझाव:</strong></p>
+		<ul>
+		<li>बड़ी फाइल डाउनलोड बीच में रुक गई? → डाउनलोड मैनेजर (जैसे IDM, Free Download Manager) का उपयोग करें</li>
+		<li>ऑडियो निकालना चाहते हैं? → MP4 डाउनलोड करने के बाद ऑनलाइन टूल से MP3 में बदलें</li>
+		<li>महत्वपूर्ण सामग्री सेव करनी है? → मेटाडेटा (शीर्षक, स्रोत लिंक) का बैकअप भी लें</li>
+		</ul>
+		<p><strong>⚠️ ध्यान दें:</strong> टेलीग्राम वीडियो डायरेक्ट लिंक की वैधता आम तौर पर 1~2 घंटे होती है, कृपया समय पर डाउनलोड पूरा करें।</p>
+		</div>
+		</div>
+		</section>
+
+		<section>
+		<h2>⚙️ तकनीकी सिद्धांत स्पष्टीकरण</h2>
+		<ul>
+		<li>यह टूल टेलीग्राम वेब वर्जन पब्लिक मैसेज की DOM संरचना का विश्लेषण करके, वीडियो डायरेक्ट लिंक निकालता है (<code>&lt;video&gt;</code> टैग में <code>src</code> एट्रिब्यूट)।</li>
+		<li>टेलीग्राम के नए वर्जन के लिए, आधिकारिक <code>t.me</code> पेज के JSON कॉन्फ़िगरेशन का उपयोग कर मीडिया URL निकालता है, <strong>किसी तीसरे पक्ष API पर निर्भर नहीं</strong>।</li>
+		<li>वीडियो ओरिजिनल MP4 फॉर्मेट में प्रदान किया जाता है, अपलोड के समय की पूरी रिज़ॉल्यूशन और बिटरेट बरकरार रहती है, <strong>कोई कम्प्रेशन नहीं, वॉटरमार्क नहीं</strong>।</li>
+		<li><strong>सभी प्रोसेसिंग ब्राउज़र साइड होती है</strong>: JavaScript सीधे वीडियो URL प्राप्त करती है और डाउनलोड ट्रिगर करती है, किसी सर्वर के माध्यम से नहीं गुजरती।</li>
+		<li>प्रोटेक्टेड कंटेंट ("फॉरवर्डिंग रोकें" सेट वीडियो) के लिए, टेलीग्राम मीडिया स्ट्रीम एन्क्रिप्ट करता है, ऐसा कंटेंट इस टूल से डाउनलोड नहीं हो सकता।</li>
+		</ul>
+		<p><strong>तकनीकी सीमा स्पष्टीकरण:</strong> चूंकि टेलीग्राम आधिकारिक डाउनलोड API प्रदान नहीं करता, और वेब वर्जन संरचना बार-बार अपडेट होती है, यह टूल टेलीग्राम वेब वर्जन में बदलाव के बाद अस्थायी रूप से काम नहीं कर सकता। हम अनुकूलता बनाए रखने के लिए समय पर अपडेट करने का वादा करते हैं।</p>
+		</section>
+		
+		<section>
+		<h2>⚠️ गोपनीयता नीति और कानूनी घोषणा</h2>
+		<ol>
+		<li><strong>गोपनीयता संरक्षण:</strong> यह टूल कोई उपयोगकर्ता डेटा एकत्र या संग्रहीत नहीं करता। सभी लिंक पार्सिंग ब्राउज़र लोकल होती है, सर्वर पर नहीं भेजी जाती।</li>
+		<li><strong>केवल पब्लिक कंटेंट:</strong> प्राइवेट वार्तालाप, भुगतान चैनल या अनधिकृत कंटेंट डाउनलोड करने का प्रयास करना सख्त मना है। हम टेलीग्राम सुरक्षा तंत्र को बायपास करने का तरीका प्रदान नहीं करते।</li>
+		<li><strong>कॉपीराइट अनुपालन:</strong> डाउनलोड किया गया कंटेंट केवल व्यक्तिगत उपयोग के लिए है। पुनः अपलोड करना, व्यावसायिक वितरण या निर्माता के अधिकारों का उल्लंघन करना मना है। <a href="https://core.telegram.org/api/terms" target="_blank">टेलीग्राम सेवा नियमों</a> का सम्मान करें।</li>
+		<li><strong>दायित्व हटाना:</strong> उपयोगकर्ता को डाउनलोड व्यवहार की वैधता स्वयं तय करनी होगी। हम इस टूल के दुरुपयोग से होने वाले अकाउंट सस्पेंशन, कानूनी विवादों के लिए जिम्मेदार नहीं हैं।</li>
+		<li><strong>कोई गारंटी नहीं:</strong> यह टूल "जैसा है" प्रदान किया जाता है, सभी टेलीग्राम वीडियो के साथ 100% अनुकूलता की गारंटी नहीं देता, डेटा हानि की जिम्मेदारी नहीं लेता।</li>
+		</ol>
+		</section>
+
+		<section>
+		<h2>❓ सामान्य प्रश्न (FAQ)</h2>
+		<div class="faq-list">
+		<div class="faq-item">
+		<strong>प्र: "लिंक पार्स नहीं कर सकता" क्यों दिख रहा है?</strong><br>
+		संभावित कारण:<br>
+		• लिंक पब्लिक चैनल/ग्रुप कंटेंट नहीं है (जैसे प्राइवेट चैट लिंक)<br>
+		• चैनल ने गोपनीयता सुरक्षा सेट की है<br>
+		• टेलीग्राम वेब वर्जन संरचना अपडेट (हम जल्द से जल्द ठीक करेंगे)<br>
+		• लिंक फॉर्मेट गलत है (<code>t.me/</code> से शुरू होना चाहिए)
+		</div>
+		<div class="faq-item">
+		<strong>प्र: एन्क्रिप्टेड ग्रुप या प्राइवेट चैट में वीडियो डाउनलोड कर सकते हैं?</strong><br>
+		<strong>नहीं।</strong> यह टूल टेलीग्राम सुरक्षा नीतियों का कड़ाई से पालन करता है, केवल पूरी तरह पब्लिक, बिना लॉगिन एक्सेस किए जा सकने वाले कंटेंट का समर्थन करता है। प्राइवेट कंटेंट के लिए टेलीग्राम आधिकारिक क्लाइंट की जरूरत होती है।
+		</div>
+		<div class="faq-item">
+		<strong>प्र: डाउनलोड किए गए वीडियो में वॉटरमार्क या क्वालिटी कम होती है?</strong><br>
+		नहीं। हम टेलीग्राम सर्वर पर मौजूद ओरिजिनल वीडियो फाइल प्रदान करते हैं, जो टेलीग्राम ऐप में देखने जैसी क्वालिटी के समान होती है, कोई अतिरिक्त वॉटरमार्क नहीं।
+		</div>
+		<div class="faq-item">
+		<strong>प्र: iOS डिवाइस पर डाउनलोड करने के बाद फाइल क्यों नहीं मिलती?</strong><br>
+		iOS प्रतिबंध: Safari में डाउनलोड की गई फाइलें "फाइलें" ऐप → "iCloud ड्राइव" → "डाउनलोड" में सेव होती हैं। डाउनलोड कंटेंट प्रबंधित करने के लिए "फाइलें" ऐप इंस्टॉल करने की सलाह दी जाती है।
+		</div>
+		<div class="faq-item">
+		<strong>प्र: टेलीग्राम चैनल में डॉक्यूमेंट या ऑडियो फाइलें डाउनलोड करने का समर्थन करते हैं?</strong><br>
+		वर्तमान वर्जन केवल वीडियो डाउनलोड का समर्थन करता है। हम मल्टी-फॉर्मेट सपोर्ट (PDF, MP3, ZIP आदि) पर काम कर रहे हैं, कृपया भविष्य के अपडेट की प्रतीक्षा करें!
+		</div>
+		<div class="faq-item">
+		<strong>प्र: यह टूल सुरक्षित है? क्या यह मेरा टेलीग्राम अकाउंट चुराएगा?</strong><br>
+		बिल्कुल सुरक्षित। यह टूल <strong>कोई टेलीग्राम अकाउंट जानकारी (मोबाइल नंबर, सत्र, संपर्क) नहीं मांगता या एकत्र करता</strong>। यह केवल पब्लिक वेब पेज के मीडिया लिंक प्रोसेस करता है, आपके टेलीग्राम अकाउंट से पूरी तरह अलग है।
+		</div>
+		</div>
+		</section>
+
+		<footer>
+		<p>समस्या या सुधार सुझाव? हम आपकी प्रतिक्रिया को महत्व देते हैं!<br>
+		📧 ईमेल: <a href="{{mailtocontactmail}}">{{contactmail}}</a><br>
+		💬 GitHub Issues: <a href="{{githublink}}" target="_blank">{{githublink}}</a></p>
+		<p style="margin-top: 1.2rem; font-style: italic; color: #666;">
+		<strong>टेलीग्राम वीडियो डाउनलोडर</strong> का उपयोग करने के लिए धन्यवाद —<br>
+		गोपनीयता पर ध्यान, नियमों का सम्मान, पब्लिक कंटेंट को स्वतंत्र रूप से प्रवाहित करें।🕊️
+		</p>
+		<p style="margin-top: 0.8rem; font-size: 0.85rem; color: #999;">
+		यह टूल Telegram FZ-LLC से कोई संबंध नहीं रखता। Telegram, Telegram FZ-LLC का एक पंजीकृत ट्रेडमार्क है।
+		</p>
+		</footer>
+
+	<footer class="footer">
+			<p>© {{year_string}} टेलीग्राम वीडियो डाउनलोडर. सर्वाधिकार सुरक्षित।</p>
+			<p>यह साइट Telegram, Inc. से आधिकारिक रूप से संबद्ध नहीं है | 
+			<a href="/privacy-policy" style="color: #00c6ff;">गोपनीयता नीति</a> | 
+			<a href="/terms-of-service" style="color: #00c6ff;">उपयोग की शर्तें</a> | 
+			<a href="/about-us" style="color: #00c6ff;">हमारे बारे में</a>| 
+			<a href="/contact-us" style="color: #00c6ff;">संपर्क करें</a>
+			</p>
+			<p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.8;">
+				यह टूल केवल व्यक्तिगत अध्ययन और अनुसंधान के लिए है, उपयोगकर्ता को सभी कानूनी दायित्व स्वयं वहन करने होंगे
+			</p>
+			<p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7;">
+				कॉपीराइट से सुरक्षित सामग्री डाउनलोड करना संबंधित कानूनों का उल्लंघन हो सकता है, कृपया स्थानीय कानूनों का पालन करें
+			</p>
+	</footer>
+
+
+	</div>
+
+	</div>
+	<div class="col-sm-2 d-none d-md-block">
+	</div>
+</div>
+</div>
+<script src="/static/jquery.min.js"  crossorigin="anonymous"></script>
+<script src="/static/popper.min.js"  crossorigin="anonymous"></script>
+
+<script data-ad-client="ca-pub-3339068484857413" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script type="text/javascript" src="/static/jquery.lazy.min.js"></script>
+
+<script type="text/javascript" src="/static/shareon.iife.js" defer  init></script>
+<script>
+	$(function() {
+		$('.lazy').Lazy();
+	});
+</script>
+<script type="application/ld+json">
+	{
+	"@context": "http://schema.org/",
+	"@type": "Organization",
+	"url": "https://twittervideodownloaderx.com",
+	"logo": "https://twittervideodownloaderx.com/static/logo.png"
+	}
+</script>
+
+<script>
+function mp3turn(obj){
+	var inputvalue =obj.getAttribute('va');
+	//alert(inputvalue);
+	if (inputvalue==='')
+	{
+		alert('456');
+		return false;
+	}
+	$('#mp3placeholder').empty();
+	var spinner='<span style="font-size:1.5em"><span class="spinner-loader" ></span>';
+	$('#mp3placeholder').append(spinner+'<br />वीडियो को Mp3 में बदल रहा है</span>');
+	var xhr = new XMLHttpRequest();
+	var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+	xhr.open('post', '/getmp3', true);
+	xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	xhr.send('inputvalue='+inputvalue);
+	xhr.onreadystatechange = processresponse;
+	function processresponse() {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			// Everything is good, the response was received.
+		if (xhr.status === 200) {
+			// Perfect!
+			var rstring=xhr.responseText;
+			//alert(xhr.responseText);
+			var response = JSON.parse(rstring);
+			var statue=response.statue;
+			if (statue=='NO'){
+				$('#mp3placeholder').html('कोई परिणाम नहीं');
+				return;
+				}
+			var mp3filepath=response.mp3filepath;
+			//alert(htimage);
+			$('#mp3placeholder').empty();
+			var intext='';
+			var intext='<a href="/'+mp3filepath+'" target="_blank" class="btn btn-danger">वीडियो Mp3 डाउनलोड करें</a>';
+			$('#mp3placeholder').html(intext);
+			}
+		else{
+			$('#mp3placeholder').html('<p style="font-size:1.5em">कोई परिणाम नहीं</p>');
+		}
+		}
+	}
+};
+function gifturn(obj){
+	var inputvalue =obj.getAttribute('va');
+	//alert(inputvalue);
+	if (inputvalue==='')
+	{
+		alert('456');
+		return false;
+	}
+	$('#gifplaceholder').empty();
+	var spinner='<span style="font-size:1.5em"><span class="spinner-loader" ></span>';
+	$('#gifplaceholder').append(spinner+'<br />वीडियो को Gif में बदल रहा है</span>');
+	var xhr = new XMLHttpRequest();
+	var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+	xhr.open('post', '/getgif', true);
+	xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	xhr.send('inputvalue='+inputvalue);
+	xhr.onreadystatechange = processresponse;
+	function processresponse() {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			// Everything is good, the response was received.
+		if (xhr.status === 200) {
+			// Perfect!
+			var rstring=xhr.responseText;
+			//alert(xhr.responseText);
+			var response = JSON.parse(rstring);
+			var statue=response.statue;
+			if (statue=='NO'){
+				$('#gifplaceholder').html('कोई परिणाम नहीं');
+				return;
+				}
+			var giffilepath=response.giffilepath;
+			//alert(htimage);
+			$('#gifplaceholder').empty();
+			var intext='';
+			var intext='<a href="/'+giffilepath+'" target="_blank" class="btn btn-danger">वीडियो GIF डाउनलोड करें</a>';
+			$('#gifplaceholder').html(intext);
+			}
+		else{
+			$('#gifplaceholder').html('<p style="font-size:1.5em">कोई परिणाम नहीं</p>');
+		}
+		}
+	}
+};
+$(document).ready(function() {
+$("#mainsource").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $("#bigbutton").click();
+    }
+});
+$('#bigbutton').on('click',function(){
+	var inputvalue = $('#mainsource').val();
+	if (inputvalue==='')
+	{
+		return false;
+	}
+	$('#hashshow').empty();
+	var spinner='<div style="text-align:center;"><span style="font-size:1.5em;"><span style="background-color:#007FFF;" class="spinner-loader" ></span>';
+	$('#hashshow').append(spinner+'<br />वीडियो डाउनलोड हो रहा है</span></div>');
+	
+	//document.getElementById("loader").style.display = "block";
+
+	var xhr = new XMLHttpRequest();
+	var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+	xhr.open('post', '/getitem_telegram', true);
+	xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	xhr.send('inputvalue='+inputvalue);
+	xhr.onreadystatechange = processresponse;
+	function processresponse() {
+		if (xhr.readyState === XMLHttpRequest.DONE) {
+			// Everything is good, the response was received.
+		if (xhr.status === 200) {
+			// Perfect!
+			document.getElementById("loader").style.display = "none";
+			var rstring=xhr.responseText;
+			//alert(xhr.responseText);
+			var response = JSON.parse(rstring);
+			var statue=response.statue;
+			if (statue=='NO'){
+				$('#hashshow').html('कोई परिणाम नहीं');
+				return;
+				}
+				
+				
+				
+				var v_thumbnail=encodeURI(response.v_thumbnail);//
+				
+				var v_title=response.v_title;//
+				var v_webpage_url=encodeURI(response.v_webpage_url);//
+				var v_duration_string=response.v_duration_string;//
+				//var v_uploader=response.v_uploader;
+				//var v_uploader_url=response.v_uploader_url;
+				var v_upload_date=response.v_upload_date;//
+				//var v_view_count=response.v_view_count;
+				//var v_like_count=response.v_like_count;
+				//var v_comment_count=response.v_comment_count;
+				var v_ext=response.v_ext;//
+				//var v_width=response.v_width;
+				//var v_height=response.v_height;
+				var v_resolution=response.v_resolution;//
+				var v_aspect_ratio=response.v_aspect_ratio;//
+				
+				var v_des=response.v_des;//
+
+				var v_formats = response.formatslist;
+				//var v_thumbnails = response.thumbnailslist;
+			
+
+			$('#hashshow').empty();
+			var intext='';
+			var intext=intext+'<div class="row" ><div class="col-sm-6" ><div><b>'+v_title+'</b></div><div><img src="'+v_thumbnail+'"  class="img-fluid" /></div>';
+			
+
+			var intext=intext+'</div><div class="col-sm-6 align-self-end" ><br /><br />';
+			
+			for (let i = 0; i < v_formats.length; i++) {
+			
+				turl=encodeURI(v_formats[i][0]);
+				tres=v_formats[i][1];
+				var intext=intext+'<div><i class="bi bi-cloud-download"></i> <a style="text-decoration:none" href="'+turl+'">वीडियो डाउनलोड करें (रिज़ॉल्यूशन '+tres+')</a></div>';
+			}
+			
+			//var intext=intext+'<br />'
+			//for (let i = 0; i < v_thumbnails.length; i++) {
+			
+			//	turl=v_thumbnails[i][0];
+			//	tres=v_thumbnails[i][1];
+			//	var intext=intext+'<div><i class="bi bi-file-image"></i> <a style="text-decoration:none" href="'+turl+'">थंबनेल डाउनलोड करें (रिज़ॉल्यूशन '+tres+')</a></div>';
+			//}
+			
+			var intext=intext+'</div></div><hr />';
+	
+			var intext=intext+'<div class="row" ><div class="col-sm-6" ><div><b>शीर्षक: </b>'+v_title+'</div><div><b>वेबपेज लिंक: </b>'+v_webpage_url+'</div><div><b>अवधि: </b>'+v_duration_string+'</div><div><b>अपलोड तिथि: </b>'+v_upload_date+'</div></div>';
+	
+			var intext=intext+'<div class="col-sm-6" ><div><b>फ़ाइल प्रारूप: </b>'+v_ext+'</div><div><b>रिज़ॉल्यूशन: </b>'+v_resolution+'</div><div><b>पहलू अनुपात: </b>'+v_aspect_ratio+'</div></div></div>';
+
+			var intext=intext+'<div class="row" ><div class="col-sm-12" ><div><b>वीडियो विवरण: </b>'+v_des+'</div></div></div>';
+
+
+			var intext=intext+'<div class="row" >'+'<div class="shareon shadow bg-light bg-gradient"><a class="facebook" data-title="'+v_title+'" ><span  style="font-size:1em">facebook</span></a><a class="linkedin" data-title="'+v_title+'" ><span style="font-size:1em">linkedin</span></a>	<a class="mastodon" data-title="'+v_title+'"><span  style="font-size:1em">mastodon</span></a><a class="messenger" data-fb-app-id="0123456789012345" data-title="'+v_title+'"><span  style="font-size:1em">messenger</span></a><a class="pinterest" data-title="'+v_title+'"><span  style="font-size:1em">pinterest</span></a><a class="reddit" data-title="'+v_title+'"><span  style="font-size:0.5em">reddit</span></a><a class="telegram" data-title="'+v_title+'"><span  style="font-size:1em">telegram</span></a><a class="twitter" data-title="'+v_title+'"><span  style="font-size:1em">twitter</span></a><a class="viber" data-title="'+v_title+'"><span  style="font-size:1em">viber</span></a><a class="vkontakte" data-title="'+v_title+'"><span  style="font-size:1em">vkontakte</span></a><a class="whatsapp" data-title="'+v_title+'"><span  style="font-size:1em">whatsapp</span></a></div>';
+			
+			
+			var intext=intext+'</div>';
+			
+			//$('#hashshow').append('<div>'+'<img src="'+htsimage+'" />'+'</div>'+'<p>'+trunttext+'</p>');
+			$('#hashshow').html(intext);
+			}
+		else{
+			document.getElementById("loader").style.display = "none";
+			$('#hashshow').html('<p style="font-size:1.5em">कोई परिणाम नहीं</p>');
+		}
+		}
+	}
+});
+});
+</script>
+<script>
+$(document).ready(function() {
+  $('.droplang').click(function(e) {
+    e.preventDefault();
+    var selectedValue = $(this).data('value');
+	var domainname='https://twittervideodownloaderx.com';
+	if (selectedValue==='en')
+	{
+		window.location=domainname+'/{{baseurlstring}}';
+	}
+	else
+	{
+	window.location=domainname+'/{{baseurlstring}}_'+selectedValue;
+	}
+  });
+});
+</script>
+
+
+<script>
+$(document).ready(function() {
+  $('.droptool').click(function(e) {
+    e.preventDefault();
+    var selectedtoolValue = $(this).data('value');
+	var domainname='https://twittervideodownloaderx.com';
+	var current_lang='{{lang}}';
+	
+	if (selectedtoolValue==='x_twitter')
+	{
+		if (current_lang==='en')
+			{
+			window.location=domainname;
+			}
+		else
+			{
+			window.location=domainname+'/'+current_lang;
+			}
+	}
+	else
+	{
+		if (current_lang==='en')
+		
+			{
+			window.location=domainname+'/'+selectedtoolValue+'_downloader';
+			}
+		else
+			{
+			window.location=domainname+'/'+selectedtoolValue+'_downloader_'+'{{lang}}';
+			}
+	}
+  });
+});
+</script>
+<script type="text/javascript">
+var sc_project=11698515; 
+var sc_invisible=1; 
+var sc_security="38970939"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+
+<link  rel="stylesheet" href='/static/wait.css' >
+</body>
+</html>
